@@ -81,6 +81,7 @@
 		66F914B422705AE1009839FD /* SfeirConnect */ = {
 			isa = PBXGroup;
 			children = (
+				66F914D4227090E7009839FD /* Controller */,
 				66F914CF227081C9009839FD /* Common */,
 				66F914CE227081BE009839FD /* Network */,
 				66F914CD227081B6009839FD /* ModelView */,
@@ -112,7 +113,6 @@
 		66F914CD227081B6009839FD /* ModelView */ = {
 			isa = PBXGroup;
 			children = (
-				66F914B722705AE1009839FD /* ViewController.swift */,
 			);
 			path = ModelView;
 			sourceTree = "<group>";
@@ -137,6 +137,14 @@
 				66F914C922705FA3009839FD /* R.generated.swift */,
 			);
 			path = RSwfit;
+			sourceTree = "<group>";
+		};
+		66F914D4227090E7009839FD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				66F914B722705AE1009839FD /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
