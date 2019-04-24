@@ -62,7 +62,7 @@
 		66F914A922705AE1009839FD = {
 			isa = PBXGroup;
 			children = (
-				66F914C922705FA3009839FD /* R.generated.swift */,
+				66F914D122708BEC009839FD /* RSwfit */,
 				66F914B422705AE1009839FD /* SfeirConnect */,
 				66F914B322705AE1009839FD /* Products */,
 				5204B70E05420BC4698089BC /* Pods */,
@@ -129,6 +129,14 @@
 			children = (
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		66F914D122708BEC009839FD /* RSwfit */ = {
+			isa = PBXGroup;
+			children = (
+				66F914C922705FA3009839FD /* R.generated.swift */,
+			);
+			path = RSwfit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,7 +263,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$SRCROOT/R.generated.swift",
+				$SRCROOT/R.generated.swift,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
