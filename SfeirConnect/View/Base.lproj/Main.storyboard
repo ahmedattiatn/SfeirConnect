@@ -10,19 +10,132 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Sign In View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SfeirConnect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SignInViewController" customModule="SfeirConnect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-picture" translatesAutoresizingMaskIntoConstraints="NO" id="fJc-d6-WEF">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-dark" translatesAutoresizingMaskIntoConstraints="NO" id="ur1-Rl-0RG">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="323"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-dark-down" translatesAutoresizingMaskIntoConstraints="NO" id="HHo-Nb-UfC">
+                                <rect key="frame" x="0.0" y="571" width="414" height="325"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cwe-wW-ewK">
+                                <rect key="frame" x="35" y="59" width="344" height="736"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="time-atlogo" translatesAutoresizingMaskIntoConstraints="NO" id="b4V-Lk-sFa">
+                                        <rect key="frame" x="139.5" y="0.0" width="65" height="66"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timeat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sp6-C4-epa">
+                                        <rect key="frame" x="0.0" y="86" width="134" height="54"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="45"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don’t think, it’s time to eat!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LGi-3D-Kb0">
+                                        <rect key="frame" x="0.0" y="148" width="250" height="67"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="28"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HaL-j0-MbR" customClass="DCButton" customModule="SfeirConnect" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="665" width="344" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="JGW-hQ-6ll"/>
+                                        </constraints>
+                                        <state key="normal" title="Enter with Google">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="buttonStyleName" value="FilledOFF"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44e-C4-tMT" customClass="DCButton" customModule="SfeirConnect" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="598" width="344" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="xC1-CR-oWY"/>
+                                        </constraints>
+                                        <state key="normal" title="Enter with Facebook">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebook" translatesAutoresizingMaskIntoConstraints="NO" id="62M-nz-SbW">
+                                        <rect key="frame" x="34" y="614" width="13" height="24"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="google" translatesAutoresizingMaskIntoConstraints="NO" id="cJs-AT-0yf">
+                                        <rect key="frame" x="34" y="681.5" width="23" height="23"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Sp6-C4-epa" secondAttribute="trailing" constant="30" id="0EL-lZ-9JH"/>
+                                    <constraint firstItem="Sp6-C4-epa" firstAttribute="leading" secondItem="Cwe-wW-ewK" secondAttribute="leading" id="0Nd-qS-2tc"/>
+                                    <constraint firstItem="62M-nz-SbW" firstAttribute="centerY" secondItem="44e-C4-tMT" secondAttribute="centerY" id="3sR-Q2-b9o"/>
+                                    <constraint firstItem="Sp6-C4-epa" firstAttribute="top" secondItem="b4V-Lk-sFa" secondAttribute="bottom" constant="20" id="AXl-dQ-weg"/>
+                                    <constraint firstAttribute="trailing" secondItem="HaL-j0-MbR" secondAttribute="trailing" id="CvM-BE-UsG"/>
+                                    <constraint firstAttribute="bottom" secondItem="HaL-j0-MbR" secondAttribute="bottom" constant="15" id="Hne-Ay-Jz3"/>
+                                    <constraint firstItem="b4V-Lk-sFa" firstAttribute="top" secondItem="Cwe-wW-ewK" secondAttribute="top" id="JyA-ZJ-ED0"/>
+                                    <constraint firstItem="62M-nz-SbW" firstAttribute="leading" secondItem="Cwe-wW-ewK" secondAttribute="leading" constant="34" id="Mey-sb-euh"/>
+                                    <constraint firstItem="LGi-3D-Kb0" firstAttribute="top" secondItem="Sp6-C4-epa" secondAttribute="bottom" constant="8" id="Mox-b0-dWc"/>
+                                    <constraint firstItem="HaL-j0-MbR" firstAttribute="leading" secondItem="Cwe-wW-ewK" secondAttribute="leading" id="OG4-Ej-2SV"/>
+                                    <constraint firstAttribute="trailing" secondItem="44e-C4-tMT" secondAttribute="trailing" id="QeC-dJ-5k8"/>
+                                    <constraint firstItem="HaL-j0-MbR" firstAttribute="top" secondItem="44e-C4-tMT" secondAttribute="bottom" constant="11" id="aR0-hQ-qbH"/>
+                                    <constraint firstItem="44e-C4-tMT" firstAttribute="leading" secondItem="Cwe-wW-ewK" secondAttribute="leading" id="dSs-zB-eRw"/>
+                                    <constraint firstItem="cJs-AT-0yf" firstAttribute="leading" secondItem="Cwe-wW-ewK" secondAttribute="leading" constant="34" id="e5i-Ot-msL"/>
+                                    <constraint firstItem="cJs-AT-0yf" firstAttribute="centerY" secondItem="HaL-j0-MbR" secondAttribute="centerY" id="jKg-E0-mDY"/>
+                                    <constraint firstItem="LGi-3D-Kb0" firstAttribute="leading" secondItem="Cwe-wW-ewK" secondAttribute="leading" id="nLB-W0-6Nj"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="LGi-3D-Kb0" secondAttribute="trailing" constant="30" id="s3g-j7-Oyx"/>
+                                    <constraint firstItem="b4V-Lk-sFa" firstAttribute="centerX" secondItem="Cwe-wW-ewK" secondAttribute="centerX" id="vrR-9K-Xzt"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cwe-wW-ewK" secondAttribute="trailing" constant="35" id="3C4-ge-GuR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Cwe-wW-ewK" secondAttribute="bottom" constant="67" id="49a-Ec-zQK"/>
+                            <constraint firstItem="fJc-d6-WEF" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="6cX-QJ-hl4"/>
+                            <constraint firstItem="fJc-d6-WEF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8pU-WL-7eQ"/>
+                            <constraint firstItem="ur1-Rl-0RG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ARE-78-K78"/>
+                            <constraint firstItem="Cwe-wW-ewK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="DqT-8r-Inp"/>
+                            <constraint firstItem="ur1-Rl-0RG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HeN-b0-0hH"/>
+                            <constraint firstItem="fJc-d6-WEF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="R1J-aK-6Ng"/>
+                            <constraint firstItem="fJc-d6-WEF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="UL4-bD-GiX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HHo-Nb-UfC" secondAttribute="trailing" id="bNe-BA-D2O"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ur1-Rl-0RG" secondAttribute="trailing" id="d3S-be-8Ea"/>
+                            <constraint firstAttribute="bottom" secondItem="HHo-Nb-UfC" secondAttribute="bottom" id="o22-kA-SGY"/>
+                            <constraint firstItem="HHo-Nb-UfC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vKp-rr-5j7"/>
+                            <constraint firstItem="Cwe-wW-ewK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="zah-uO-ei9"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="facebookBtn" destination="44e-C4-tMT" id="03S-dr-Ddy"/>
+                        <outlet property="facebookImageView" destination="62M-nz-SbW" id="Hzh-K8-d7T"/>
+                        <outlet property="googleBtn" destination="HaL-j0-MbR" id="WKi-s4-qNS"/>
+                        <outlet property="googleImageView" destination="cJs-AT-0yf" id="yG6-le-zhU"/>
+                        <outlet property="justeatLabel" destination="LGi-3D-Kb0" id="tzg-4x-ndT"/>
+                        <outlet property="logoImageView" destination="b4V-Lk-sFa" id="UEL-iA-67R"/>
+                        <outlet property="timeatLabel" destination="Sp6-C4-epa" id="aiQ-HV-dby"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="244.92753623188409" y="90.401785714285708"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg-dark" width="381" height="323"/>
+        <image name="bg-dark-down" width="381" height="325"/>
+        <image name="bg-picture" width="381" height="826"/>
+        <image name="facebook" width="13" height="24"/>
+        <image name="google" width="23" height="23"/>
+        <image name="time-atlogo" width="65" height="66"/>
+    </resources>
 </document>

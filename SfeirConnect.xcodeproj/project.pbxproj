@@ -9,22 +9,30 @@
 /* Begin PBXBuildFile section */
 		5A4B5B04E320934B27D6F0B3 /* Pods_SfeirConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D47C83E64948C9ABE0F28634 /* Pods_SfeirConnect.framework */; };
 		66F914B622705AE1009839FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F914B522705AE1009839FD /* AppDelegate.swift */; };
-		66F914B822705AE1009839FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F914B722705AE1009839FD /* ViewController.swift */; };
+		66F914B822705AE1009839FD /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F914B722705AE1009839FD /* SignInViewController.swift */; };
 		66F914BB22705AE1009839FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66F914B922705AE1009839FD /* Main.storyboard */; };
 		66F914BD22705AE2009839FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66F914BC22705AE2009839FD /* Assets.xcassets */; };
 		66F914C022705AE2009839FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66F914BE22705AE2009839FD /* LaunchScreen.storyboard */; };
 		66F914CA22705FA3009839FD /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F914C922705FA3009839FD /* R.generated.swift */; };
+		66F914D82270AAFD009839FD /* DCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F914D72270AAFD009839FD /* DCButton.swift */; };
+		66F914DA2270AC92009839FD /* UIColor+DC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F914D92270AC92009839FD /* UIColor+DC.swift */; };
+		66F914DD2271A51D009839FD /* SignInViewController+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F914DC2271A51D009839FD /* SignInViewController+Animation.swift */; };
+		66F914E22271B322009839FD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 66F914E12271B322009839FD /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		66F914B222705AE1009839FD /* SfeirConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SfeirConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66F914B522705AE1009839FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		66F914B722705AE1009839FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		66F914B722705AE1009839FD /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		66F914BA22705AE1009839FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		66F914BC22705AE2009839FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66F914BF22705AE2009839FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66F914C122705AE2009839FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66F914C922705FA3009839FD /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		66F914D72270AAFD009839FD /* DCButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCButton.swift; sourceTree = "<group>"; };
+		66F914D92270AC92009839FD /* UIColor+DC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+DC.swift"; sourceTree = "<group>"; };
+		66F914DC2271A51D009839FD /* SignInViewController+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignInViewController+Animation.swift"; sourceTree = "<group>"; };
+		66F914E12271B322009839FD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7235F8E6E42FB15C20E6A37D /* Pods-SfeirConnect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SfeirConnect.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SfeirConnect/Pods-SfeirConnect.debug.xcconfig"; sourceTree = "<group>"; };
 		C4B3ED1C68B5515FE0F2795F /* Pods-SfeirConnect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SfeirConnect.release.xcconfig"; path = "Pods/Target Support Files/Pods-SfeirConnect/Pods-SfeirConnect.release.xcconfig"; sourceTree = "<group>"; };
 		D47C83E64948C9ABE0F28634 /* Pods_SfeirConnect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SfeirConnect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +70,7 @@
 		66F914A922705AE1009839FD = {
 			isa = PBXGroup;
 			children = (
+				66F914DE2271B178009839FD /* FireBase */,
 				66F914D122708BEC009839FD /* RSwfit */,
 				66F914B422705AE1009839FD /* SfeirConnect */,
 				66F914B322705AE1009839FD /* Products */,
@@ -81,8 +90,8 @@
 		66F914B422705AE1009839FD /* SfeirConnect */ = {
 			isa = PBXGroup;
 			children = (
-				66F914D4227090E7009839FD /* Controller */,
 				66F914CF227081C9009839FD /* Common */,
+				66F914D4227090E7009839FD /* Controller */,
 				66F914CE227081BE009839FD /* Network */,
 				66F914CD227081B6009839FD /* ModelView */,
 				66F914CC227081B0009839FD /* View */,
@@ -127,6 +136,8 @@
 		66F914CF227081C9009839FD /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				66F914D72270AAFD009839FD /* DCButton.swift */,
+				66F914D92270AC92009839FD /* UIColor+DC.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -142,9 +153,26 @@
 		66F914D4227090E7009839FD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				66F914B722705AE1009839FD /* ViewController.swift */,
+				66F914DB2271A4E2009839FD /* SignIN */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		66F914DB2271A4E2009839FD /* SignIN */ = {
+			isa = PBXGroup;
+			children = (
+				66F914B722705AE1009839FD /* SignInViewController.swift */,
+				66F914DC2271A51D009839FD /* SignInViewController+Animation.swift */,
+			);
+			path = SignIN;
+			sourceTree = "<group>";
+		};
+		66F914DE2271B178009839FD /* FireBase */ = {
+			isa = PBXGroup;
+			children = (
+				66F914E12271B322009839FD /* GoogleService-Info.plist */,
+			);
+			path = FireBase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66F914C022705AE2009839FD /* LaunchScreen.storyboard in Resources */,
+				66F914E22271B322009839FD /* GoogleService-Info.plist in Resources */,
 				66F914BD22705AE2009839FD /* Assets.xcassets in Resources */,
 				66F914BB22705AE1009839FD /* Main.storyboard in Resources */,
 			);
@@ -306,9 +335,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66F914B822705AE1009839FD /* ViewController.swift in Sources */,
+				66F914D82270AAFD009839FD /* DCButton.swift in Sources */,
+				66F914DA2270AC92009839FD /* UIColor+DC.swift in Sources */,
+				66F914B822705AE1009839FD /* SignInViewController.swift in Sources */,
 				66F914B622705AE1009839FD /* AppDelegate.swift in Sources */,
 				66F914CA22705FA3009839FD /* R.generated.swift in Sources */,
+				66F914DD2271A51D009839FD /* SignInViewController+Animation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,7 +417,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -440,7 +472,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
