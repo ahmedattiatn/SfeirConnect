@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GKw-a5-ebQ">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -56,6 +56,9 @@
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="buttonStyleName" value="FilledOFF"/>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="signInWithGoogle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5gb-XQ-0kd"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44e-C4-tMT" customClass="DCButton" customModule="SfeirConnect" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="598" width="344" height="56"/>
@@ -115,6 +118,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="mg4-cD-BYY"/>
                     <connections>
                         <outlet property="facebookBtn" destination="44e-C4-tMT" id="03S-dr-Ddy"/>
                         <outlet property="facebookImageView" destination="62M-nz-SbW" id="Hzh-K8-d7T"/>
@@ -123,9 +127,43 @@
                         <outlet property="justeatLabel" destination="LGi-3D-Kb0" id="tzg-4x-ndT"/>
                         <outlet property="logoImageView" destination="b4V-Lk-sFa" id="UEL-iA-67R"/>
                         <outlet property="timeatLabel" destination="Sp6-C4-epa" id="aiQ-HV-dby"/>
+                        <segue destination="Ph2-Tk-IKP" kind="show" identifier="HomeViewControllerSegue" id="rVC-OO-DLF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1155.072463768116" y="90.401785714285708"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="fl7-H6-5hZ">
+            <objects>
+                <viewController id="Ph2-Tk-IKP" customClass="HomeViewController" customModule="SfeirConnect" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EJd-EB-em6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Efn-h2-6Pa"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SiZ-jb-NOi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2045" y="90"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BrR-kh-aVv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="GKw-a5-ebQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kCJ-ap-hAp">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="y2f-WV-IOm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kLy-zC-r7F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="244.92753623188409" y="90.401785714285708"/>
         </scene>

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5A4B5B04E320934B27D6F0B3 /* Pods_SfeirConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D47C83E64948C9ABE0F28634 /* Pods_SfeirConnect.framework */; };
+		66A637E62271D22300BA2C38 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A637E52271D22300BA2C38 /* HomeViewController.swift */; };
 		66F914B622705AE1009839FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F914B522705AE1009839FD /* AppDelegate.swift */; };
 		66F914B822705AE1009839FD /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F914B722705AE1009839FD /* SignInViewController.swift */; };
 		66F914BB22705AE1009839FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66F914B922705AE1009839FD /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		66A637E52271D22300BA2C38 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		66F914B222705AE1009839FD /* SfeirConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SfeirConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66F914B522705AE1009839FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66F914B722705AE1009839FD /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +69,22 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		66A637E42271D1F800BA2C38 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				66A637E52271D22300BA2C38 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		66A637E92271D9E700BA2C38 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				66F914B522705AE1009839FD /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
 		66F914A922705AE1009839FD = {
 			isa = PBXGroup;
 			children = (
@@ -90,13 +108,13 @@
 		66F914B422705AE1009839FD /* SfeirConnect */ = {
 			isa = PBXGroup;
 			children = (
+				66A637E92271D9E700BA2C38 /* AppDelegate */,
 				66F914CF227081C9009839FD /* Common */,
 				66F914D4227090E7009839FD /* Controller */,
 				66F914CE227081BE009839FD /* Network */,
 				66F914CD227081B6009839FD /* ModelView */,
 				66F914CC227081B0009839FD /* View */,
 				66F914CB22708178009839FD /* Model */,
-				66F914B522705AE1009839FD /* AppDelegate.swift */,
 				66F914BC22705AE2009839FD /* Assets.xcassets */,
 				66F914C122705AE2009839FD /* Info.plist */,
 			);
@@ -153,6 +171,7 @@
 		66F914D4227090E7009839FD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				66A637E42271D1F800BA2C38 /* Home */,
 				66F914DB2271A4E2009839FD /* SignIN */,
 			);
 			path = Controller;
@@ -272,12 +291,16 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SfeirConnect/Pods-SfeirConnect-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -315,12 +338,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SfeirConnect/Pods-SfeirConnect-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 				"${PODS_ROOT}/TestFairy/upload-dsym.sh",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/upload-dsym.sh",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,6 +365,7 @@
 				66F914B822705AE1009839FD /* SignInViewController.swift in Sources */,
 				66F914B622705AE1009839FD /* AppDelegate.swift in Sources */,
 				66F914CA22705FA3009839FD /* R.generated.swift in Sources */,
+				66A637E62271D22300BA2C38 /* HomeViewController.swift in Sources */,
 				66F914DD2271A51D009839FD /* SignInViewController+Animation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

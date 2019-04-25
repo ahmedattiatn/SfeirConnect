@@ -8,5 +8,7 @@ target 'SfeirConnect' do
   # Pods for SfeirConnect
   pod 'R.swift'
   pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'GoogleSignIn'
   pod 'TestFairy'
 end

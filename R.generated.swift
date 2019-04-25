@@ -120,6 +120,26 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
+  /// This `R.segue` struct is generated, and contains static references to 1 view controllers.
+  struct segue {
+    /// This struct is generated for `SignInViewController`, and contains static references to 1 segues.
+    struct signInViewController {
+      /// Segue identifier `HomeViewControllerSegue`.
+      static let homeViewControllerSegue: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, SignInViewController, HomeViewController> = Rswift.StoryboardSegueIdentifier(identifier: "HomeViewControllerSegue")
+      
+      /// Optionally returns a typed version of segue `HomeViewControllerSegue`.
+      /// Returns nil if either the segue identifier, the source, destination, or segue types don't match.
+      /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
+      static func homeViewControllerSegue(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, SignInViewController, HomeViewController>? {
+        return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.signInViewController.homeViewControllerSegue, segue: segue)
+      }
+      
+      fileprivate init() {}
+    }
+    
+    fileprivate init() {}
+  }
+  
   /// This `R.storyboard` struct is generated, and contains static references to 2 storyboards.
   struct storyboard {
     /// Storyboard `LaunchScreen`.
@@ -180,7 +200,7 @@ struct _R: Rswift.Validatable {
     }
     
     struct main: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
-      typealias InitialController = SignInViewController
+      typealias InitialController = UIKit.UINavigationController
       
       let bundle = R.hostingBundle
       let name = "Main"
