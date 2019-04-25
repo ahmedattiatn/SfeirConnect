@@ -206,6 +206,7 @@
 				66F914AE22705AE1009839FD /* Sources */,
 				66F914AF22705AE1009839FD /* Frameworks */,
 				66F914B022705AE1009839FD /* Resources */,
+				66A637EC2271ED7E00BA2C38 /* ShellScript */,
 				3877FE40D58F921ADA92E742 /* [CP] Embed Pods Frameworks */,
 				C920F8807B12F23F6118EFAB /* [CP] Copy Pods Resources */,
 			);
@@ -309,6 +310,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SfeirConnect/Pods-SfeirConnect-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		66A637EC2271ED7E00BA2C38 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\"\n";
 		};
 		66F914C822705DCC009839FD /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -426,7 +444,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;

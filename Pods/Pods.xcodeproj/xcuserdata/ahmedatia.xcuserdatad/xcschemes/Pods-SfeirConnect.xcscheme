@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6CA6C8BCC64244AED11B55C9B385F050"
+               BlueprintIdentifier = "455A701C98D1E626F38D96E3F11C7CCE"
                BuildableName = "Pods_SfeirConnect.framework"
                BlueprintName = "Pods-SfeirConnect"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6CA6C8BCC64244AED11B55C9B385F050"
+            BlueprintIdentifier = "455A701C98D1E626F38D96E3F11C7CCE"
             BuildableName = "Pods_SfeirConnect.framework"
             BlueprintName = "Pods-SfeirConnect"
             ReferencedContainer = "container:Pods.xcodeproj">
