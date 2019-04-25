@@ -6,10 +6,6 @@
 //  Copyright © 2019 Ahmed ATIA. All rights reserved.
 //
 
-import UIKit
-import Firebase
-import GoogleSignIn
-
 // MARK: - Init
 // MARK: - View life cycle
 // MARK: - Setup
@@ -22,6 +18,11 @@ import GoogleSignIn
 // MARK: - User Interface
 // MARK: - Private methods
 // MARK: - User Action
+
+import UIKit
+import Firebase
+import GoogleSignIn
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

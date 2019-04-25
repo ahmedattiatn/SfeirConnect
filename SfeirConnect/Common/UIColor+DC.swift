@@ -90,7 +90,7 @@ extension UIColor {
     
     
     static func dcBaselineBlueColor() -> UIColor {
-        return UIColor(hex: 0x0092D0)
+        return UIColor(hex: 0x3B5998)
     }
     
     static func dcSkyBlueColor() -> UIColor {
