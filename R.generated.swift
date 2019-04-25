@@ -30,37 +30,26 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.image` struct is generated, and contains static references to 12 images.
+  /// This `R.image` struct is generated, and contains static references to 9 images.
   struct image {
-    /// Image `arrow-white`.
-    static let arrowWhite = Rswift.ImageResource(bundle: R.hostingBundle, name: "arrow-white")
     /// Image `bg-dark-down`.
     static let bgDarkDown = Rswift.ImageResource(bundle: R.hostingBundle, name: "bg-dark-down")
     /// Image `bg-dark`.
     static let bgDark = Rswift.ImageResource(bundle: R.hostingBundle, name: "bg-dark")
     /// Image `bg-picture`.
     static let bgPicture = Rswift.ImageResource(bundle: R.hostingBundle, name: "bg-picture")
-    /// Image `button-shape`.
-    static let buttonShape = Rswift.ImageResource(bundle: R.hostingBundle, name: "button-shape")
     /// Image `facebook`.
     static let facebook = Rswift.ImageResource(bundle: R.hostingBundle, name: "facebook")
     /// Image `google`.
     static let google = Rswift.ImageResource(bundle: R.hostingBundle, name: "google")
-    /// Image `line`.
-    static let line = Rswift.ImageResource(bundle: R.hostingBundle, name: "line")
-    /// Image `rectangle-fb`.
-    static let rectangleFb = Rswift.ImageResource(bundle: R.hostingBundle, name: "rectangle-fb")
-    /// Image `rectangle-google`.
-    static let rectangleGoogle = Rswift.ImageResource(bundle: R.hostingBundle, name: "rectangle-google")
-    /// Image `rectangle`.
-    static let rectangle = Rswift.ImageResource(bundle: R.hostingBundle, name: "rectangle")
+    /// Image `menu-Icon`.
+    static let menuIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "menu-Icon")
+    /// Image `menu`.
+    static let menu = Rswift.ImageResource(bundle: R.hostingBundle, name: "menu")
+    /// Image `oval-user`.
+    static let ovalUser = Rswift.ImageResource(bundle: R.hostingBundle, name: "oval-user")
     /// Image `time-atlogo`.
     static let timeAtlogo = Rswift.ImageResource(bundle: R.hostingBundle, name: "time-atlogo")
-    
-    /// `UIImage(named: "arrow-white", bundle: ..., traitCollection: ...)`
-    static func arrowWhite(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
-      return UIKit.UIImage(resource: R.image.arrowWhite, compatibleWith: traitCollection)
-    }
     
     /// `UIImage(named: "bg-dark", bundle: ..., traitCollection: ...)`
     static func bgDark(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
@@ -77,11 +66,6 @@ struct R: Rswift.Validatable {
       return UIKit.UIImage(resource: R.image.bgPicture, compatibleWith: traitCollection)
     }
     
-    /// `UIImage(named: "button-shape", bundle: ..., traitCollection: ...)`
-    static func buttonShape(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
-      return UIKit.UIImage(resource: R.image.buttonShape, compatibleWith: traitCollection)
-    }
-    
     /// `UIImage(named: "facebook", bundle: ..., traitCollection: ...)`
     static func facebook(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.facebook, compatibleWith: traitCollection)
@@ -92,24 +76,19 @@ struct R: Rswift.Validatable {
       return UIKit.UIImage(resource: R.image.google, compatibleWith: traitCollection)
     }
     
-    /// `UIImage(named: "line", bundle: ..., traitCollection: ...)`
-    static func line(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
-      return UIKit.UIImage(resource: R.image.line, compatibleWith: traitCollection)
+    /// `UIImage(named: "menu", bundle: ..., traitCollection: ...)`
+    static func menu(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.menu, compatibleWith: traitCollection)
     }
     
-    /// `UIImage(named: "rectangle", bundle: ..., traitCollection: ...)`
-    static func rectangle(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
-      return UIKit.UIImage(resource: R.image.rectangle, compatibleWith: traitCollection)
+    /// `UIImage(named: "menu-Icon", bundle: ..., traitCollection: ...)`
+    static func menuIcon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.menuIcon, compatibleWith: traitCollection)
     }
     
-    /// `UIImage(named: "rectangle-fb", bundle: ..., traitCollection: ...)`
-    static func rectangleFb(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
-      return UIKit.UIImage(resource: R.image.rectangleFb, compatibleWith: traitCollection)
-    }
-    
-    /// `UIImage(named: "rectangle-google", bundle: ..., traitCollection: ...)`
-    static func rectangleGoogle(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
-      return UIKit.UIImage(resource: R.image.rectangleGoogle, compatibleWith: traitCollection)
+    /// `UIImage(named: "oval-user", bundle: ..., traitCollection: ...)`
+    static func ovalUser(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.ovalUser, compatibleWith: traitCollection)
     }
     
     /// `UIImage(named: "time-atlogo", bundle: ..., traitCollection: ...)`
@@ -211,6 +190,9 @@ struct _R: Rswift.Validatable {
         if UIKit.UIImage(named: "bg-picture", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'bg-picture' is used in storyboard 'Main', but couldn't be loaded.") }
         if UIKit.UIImage(named: "facebook", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'facebook' is used in storyboard 'Main', but couldn't be loaded.") }
         if UIKit.UIImage(named: "google", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'google' is used in storyboard 'Main', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "menu", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'menu' is used in storyboard 'Main', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "menu-Icon", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'menu-Icon' is used in storyboard 'Main', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "oval-user", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'oval-user' is used in storyboard 'Main', but couldn't be loaded.") }
         if UIKit.UIImage(named: "time-atlogo", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'time-atlogo' is used in storyboard 'Main', but couldn't be loaded.") }
         if #available(iOS 11.0, *) {
         }
