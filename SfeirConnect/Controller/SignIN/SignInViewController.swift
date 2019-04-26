@@ -34,7 +34,10 @@ class SignInViewController: UIViewController {
     }
     
     @IBAction func signInWithGoogle(_ sender: Any) {
+       // let trace = Performance.startTrace(name: "test trace")
+       // trace?.incrementMetric("retry", by: 1)
         GIDSignIn.sharedInstance().signIn()
+        //trace?.stop()
     }
 }
 

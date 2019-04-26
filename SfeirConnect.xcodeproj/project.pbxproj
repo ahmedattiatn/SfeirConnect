@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		5A4B5B04E320934B27D6F0B3 /* Pods_SfeirConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D47C83E64948C9ABE0F28634 /* Pods_SfeirConnect.framework */; };
 		66A637E62271D22300BA2C38 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A637E52271D22300BA2C38 /* HomeViewController.swift */; };
+		66A637F222730D1F00BA2C38 /* AnalyticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A637F122730D1F00BA2C38 /* AnalyticsManager.swift */; };
 		66F914B622705AE1009839FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F914B522705AE1009839FD /* AppDelegate.swift */; };
 		66F914B822705AE1009839FD /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F914B722705AE1009839FD /* SignInViewController.swift */; };
 		66F914BB22705AE1009839FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66F914B922705AE1009839FD /* Main.storyboard */; };
 		66F914BD22705AE2009839FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66F914BC22705AE2009839FD /* Assets.xcassets */; };
 		66F914C022705AE2009839FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66F914BE22705AE2009839FD /* LaunchScreen.storyboard */; };
 		66F914CA22705FA3009839FD /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F914C922705FA3009839FD /* R.generated.swift */; };
-		66F914D82270AAFD009839FD /* DCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F914D72270AAFD009839FD /* DCButton.swift */; };
+		66F914D82270AAFD009839FD /* UIButton+DC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F914D72270AAFD009839FD /* UIButton+DC.swift */; };
 		66F914DA2270AC92009839FD /* UIColor+DC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F914D92270AC92009839FD /* UIColor+DC.swift */; };
 		66F914DD2271A51D009839FD /* SignInViewController+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F914DC2271A51D009839FD /* SignInViewController+Animation.swift */; };
 		66F914E22271B322009839FD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 66F914E12271B322009839FD /* GoogleService-Info.plist */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		66A637E52271D22300BA2C38 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		66A637F122730D1F00BA2C38 /* AnalyticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsManager.swift; sourceTree = "<group>"; };
 		66F914B222705AE1009839FD /* SfeirConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SfeirConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66F914B522705AE1009839FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66F914B722705AE1009839FD /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -31,7 +33,7 @@
 		66F914BF22705AE2009839FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66F914C122705AE2009839FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66F914C922705FA3009839FD /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
-		66F914D72270AAFD009839FD /* DCButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCButton.swift; sourceTree = "<group>"; };
+		66F914D72270AAFD009839FD /* UIButton+DC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+DC.swift"; sourceTree = "<group>"; };
 		66F914D92270AC92009839FD /* UIColor+DC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+DC.swift"; sourceTree = "<group>"; };
 		66F914DC2271A51D009839FD /* SignInViewController+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignInViewController+Animation.swift"; sourceTree = "<group>"; };
 		66F914E12271B322009839FD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -85,6 +87,15 @@
 			path = AppDelegate;
 			sourceTree = "<group>";
 		};
+		66A637F322730D3100BA2C38 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				66F914D72270AAFD009839FD /* UIButton+DC.swift */,
+				66F914D92270AC92009839FD /* UIColor+DC.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		66F914A922705AE1009839FD = {
 			isa = PBXGroup;
 			children = (
@@ -108,13 +119,13 @@
 		66F914B422705AE1009839FD /* SfeirConnect */ = {
 			isa = PBXGroup;
 			children = (
-				66A637E92271D9E700BA2C38 /* AppDelegate */,
 				66F914CF227081C9009839FD /* Common */,
 				66F914D4227090E7009839FD /* Controller */,
 				66F914CE227081BE009839FD /* Network */,
 				66F914CD227081B6009839FD /* ModelView */,
 				66F914CC227081B0009839FD /* View */,
 				66F914CB22708178009839FD /* Model */,
+				66A637E92271D9E700BA2C38 /* AppDelegate */,
 				66F914BC22705AE2009839FD /* Assets.xcassets */,
 				66F914C122705AE2009839FD /* Info.plist */,
 			);
@@ -154,8 +165,8 @@
 		66F914CF227081C9009839FD /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				66F914D72270AAFD009839FD /* DCButton.swift */,
-				66F914D92270AC92009839FD /* UIColor+DC.swift */,
+				66A637F322730D3100BA2C38 /* Extension */,
+				66A637F122730D1F00BA2C38 /* AnalyticsManager.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -341,7 +352,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				$SRCROOT/R.generated.swift,
+				"$SRCROOT/R.generated.swift",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -378,12 +389,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66F914D82270AAFD009839FD /* DCButton.swift in Sources */,
+				66F914D82270AAFD009839FD /* UIButton+DC.swift in Sources */,
 				66F914DA2270AC92009839FD /* UIColor+DC.swift in Sources */,
 				66F914B822705AE1009839FD /* SignInViewController.swift in Sources */,
 				66F914B622705AE1009839FD /* AppDelegate.swift in Sources */,
 				66F914CA22705FA3009839FD /* R.generated.swift in Sources */,
 				66A637E62271D22300BA2C38 /* HomeViewController.swift in Sources */,
+				66A637F222730D1F00BA2C38 /* AnalyticsManager.swift in Sources */,
 				66F914DD2271A51D009839FD /* SignInViewController+Animation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
