@@ -89,7 +89,7 @@ struct _R: Rswift.Validatable {
     }
     
     struct main: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
-      typealias InitialController = ViewController
+      typealias InitialController = SignInViewController
       
       let bundle = R.hostingBundle
       let name = "Main"
