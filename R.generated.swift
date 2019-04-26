@@ -99,17 +99,25 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 1 reuse identifiers.
+  struct reuseIdentifier {
+    /// Reuse identifier `foodCategoryCell`.
+    static let foodCategoryCell: Rswift.ReuseIdentifier<UIKit.UIView> = Rswift.ReuseIdentifier(identifier: "foodCategoryCell")
+    
+    fileprivate init() {}
+  }
+  
   /// This `R.segue` struct is generated, and contains static references to 1 view controllers.
   struct segue {
     /// This struct is generated for `SignInViewController`, and contains static references to 1 segues.
     struct signInViewController {
       /// Segue identifier `HomeViewControllerSegue`.
-      static let homeViewControllerSegue: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, SignInViewController, HomeViewController> = Rswift.StoryboardSegueIdentifier(identifier: "HomeViewControllerSegue")
+      static let homeViewControllerSegue: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, SignInViewController, FoodCategoryViewController> = Rswift.StoryboardSegueIdentifier(identifier: "HomeViewControllerSegue")
       
       /// Optionally returns a typed version of segue `HomeViewControllerSegue`.
       /// Returns nil if either the segue identifier, the source, destination, or segue types don't match.
       /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
-      static func homeViewControllerSegue(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, SignInViewController, HomeViewController>? {
+      static func homeViewControllerSegue(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, SignInViewController, FoodCategoryViewController>? {
         return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.signInViewController.homeViewControllerSegue, segue: segue)
       }
       
