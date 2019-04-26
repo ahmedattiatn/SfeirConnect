@@ -10,6 +10,8 @@
 		5A4B5B04E320934B27D6F0B3 /* Pods_SfeirConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D47C83E64948C9ABE0F28634 /* Pods_SfeirConnect.framework */; };
 		66A637E62271D22300BA2C38 /* FoodCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A637E52271D22300BA2C38 /* FoodCategoryViewController.swift */; };
 		66A637F222730D1F00BA2C38 /* AnalyticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A637F122730D1F00BA2C38 /* AnalyticsManager.swift */; };
+		66A637FB22733CCC00BA2C38 /* FoodCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A637FA22733CCC00BA2C38 /* FoodCategoryCollectionViewCell.swift */; };
+		66A637FD22733CFD00BA2C38 /* FoodCategoryViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A637FC22733CFD00BA2C38 /* FoodCategoryViewController+CollectionView.swift */; };
 		66F914B622705AE1009839FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F914B522705AE1009839FD /* AppDelegate.swift */; };
 		66F914B822705AE1009839FD /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F914B722705AE1009839FD /* SignInViewController.swift */; };
 		66F914BB22705AE1009839FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66F914B922705AE1009839FD /* Main.storyboard */; };
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		66A637E52271D22300BA2C38 /* FoodCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategoryViewController.swift; sourceTree = "<group>"; };
 		66A637F122730D1F00BA2C38 /* AnalyticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsManager.swift; sourceTree = "<group>"; };
+		66A637FA22733CCC00BA2C38 /* FoodCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		66A637FC22733CFD00BA2C38 /* FoodCategoryViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FoodCategoryViewController+CollectionView.swift"; sourceTree = "<group>"; };
 		66F914B222705AE1009839FD /* SfeirConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SfeirConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66F914B522705AE1009839FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66F914B722705AE1009839FD /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 			isa = PBXGroup;
 			children = (
 				66A637E52271D22300BA2C38 /* FoodCategoryViewController.swift */,
+				66A637FA22733CCC00BA2C38 /* FoodCategoryCollectionViewCell.swift */,
+				66A637FC22733CFD00BA2C38 /* FoodCategoryViewController+CollectionView.swift */,
 			);
 			path = FoodCategory;
 			sourceTree = "<group>";
@@ -390,6 +396,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66F914D82270AAFD009839FD /* UIButton+DC.swift in Sources */,
+				66A637FB22733CCC00BA2C38 /* FoodCategoryCollectionViewCell.swift in Sources */,
 				66F914DA2270AC92009839FD /* UIColor+DC.swift in Sources */,
 				66F914B822705AE1009839FD /* SignInViewController.swift in Sources */,
 				66F914B622705AE1009839FD /* AppDelegate.swift in Sources */,
@@ -397,6 +404,7 @@
 				66A637E62271D22300BA2C38 /* FoodCategoryViewController.swift in Sources */,
 				66A637F222730D1F00BA2C38 /* AnalyticsManager.swift in Sources */,
 				66F914DD2271A51D009839FD /* SignInViewController+Animation.swift in Sources */,
+				66A637FD22733CFD00BA2C38 /* FoodCategoryViewController+CollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

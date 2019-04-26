@@ -197,7 +197,7 @@
                                 <rect key="frame" x="20" y="205" width="374" height="657"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zHP-un-BgV">
-                                    <size key="itemSize" width="84" height="83"/>
+                                    <size key="itemSize" width="169" height="113"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -209,7 +209,53 @@
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="169" height="113"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9GV-Iq-Qnf">
+                                                    <rect key="frame" x="0.0" y="0.0" width="169" height="113"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vegetarian-Img" translatesAutoresizingMaskIntoConstraints="NO" id="GGv-eD-6aG">
+                                                            <rect key="frame" x="0.0" y="0.0" width="169" height="113"/>
+                                                        </imageView>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mask" translatesAutoresizingMaskIntoConstraints="NO" id="1Gn-lB-MbZ">
+                                                            <rect key="frame" x="0.0" y="0.0" width="169" height="113.00000000000003"/>
+                                                        </imageView>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dark-bg-cat" translatesAutoresizingMaskIntoConstraints="NO" id="Amq-oS-Nt1">
+                                                            <rect key="frame" x="0.0" y="0.0" width="169" height="113"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vegetarian" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59C-SU-gft">
+                                                            <rect key="frame" x="42.5" y="72.5" width="112.5" height="26.5"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="Amq-oS-Nt1" firstAttribute="leading" secondItem="9GV-Iq-Qnf" secondAttribute="leading" id="1vx-vC-ffV"/>
+                                                        <constraint firstAttribute="bottom" secondItem="GGv-eD-6aG" secondAttribute="bottom" id="4Wl-n7-vty"/>
+                                                        <constraint firstAttribute="trailing" secondItem="1Gn-lB-MbZ" secondAttribute="trailing" id="5Xd-nz-sQa"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Amq-oS-Nt1" secondAttribute="bottom" id="9ez-4D-cj4"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Amq-oS-Nt1" secondAttribute="trailing" id="Axd-4g-7bj"/>
+                                                        <constraint firstItem="59C-SU-gft" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9GV-Iq-Qnf" secondAttribute="leading" constant="12" id="ChE-k0-hGD"/>
+                                                        <constraint firstAttribute="bottom" secondItem="1Gn-lB-MbZ" secondAttribute="bottom" id="ILq-1d-rE2"/>
+                                                        <constraint firstAttribute="trailing" secondItem="GGv-eD-6aG" secondAttribute="trailing" id="KNK-up-daj"/>
+                                                        <constraint firstAttribute="bottom" secondItem="59C-SU-gft" secondAttribute="bottom" constant="14" id="REe-VK-vfY"/>
+                                                        <constraint firstItem="1Gn-lB-MbZ" firstAttribute="leading" secondItem="9GV-Iq-Qnf" secondAttribute="leading" id="RLT-zR-voS"/>
+                                                        <constraint firstItem="GGv-eD-6aG" firstAttribute="top" secondItem="9GV-Iq-Qnf" secondAttribute="top" id="XMN-Hj-K5n"/>
+                                                        <constraint firstAttribute="trailing" secondItem="59C-SU-gft" secondAttribute="trailing" constant="14" id="n76-GC-5qo"/>
+                                                        <constraint firstItem="1Gn-lB-MbZ" firstAttribute="top" secondItem="9GV-Iq-Qnf" secondAttribute="top" id="n8S-w3-mAy"/>
+                                                        <constraint firstItem="Amq-oS-Nt1" firstAttribute="top" secondItem="9GV-Iq-Qnf" secondAttribute="top" id="umQ-e8-NKe"/>
+                                                        <constraint firstItem="GGv-eD-6aG" firstAttribute="leading" secondItem="9GV-Iq-Qnf" secondAttribute="leading" id="w18-AS-Uax"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="9GV-Iq-Qnf" secondAttribute="trailing" id="BmD-Rq-18o"/>
+                                            <constraint firstAttribute="bottom" secondItem="9GV-Iq-Qnf" secondAttribute="bottom" id="GLw-kF-7sK"/>
+                                            <constraint firstItem="9GV-Iq-Qnf" firstAttribute="leading" secondItem="R7Z-uv-ge9" secondAttribute="leading" id="Nmj-tf-BzX"/>
+                                            <constraint firstItem="9GV-Iq-Qnf" firstAttribute="top" secondItem="R7Z-uv-ge9" secondAttribute="top" id="fKw-h3-kWq"/>
+                                        </constraints>
                                         <size key="customSize" width="169" height="113"/>
                                     </collectionViewCell>
                                 </cells>
@@ -255,11 +301,14 @@
         <image name="bg-dark" width="381" height="323"/>
         <image name="bg-dark-down" width="381" height="325"/>
         <image name="bg-picture" width="381" height="826"/>
+        <image name="dark-bg-cat" width="169" height="114"/>
         <image name="facebook" width="13" height="24"/>
         <image name="google" width="23" height="23"/>
+        <image name="mask" width="169" height="98"/>
         <image name="menu" width="34" height="34"/>
         <image name="menu-Icon" width="18" height="13"/>
         <image name="oval-user" width="47" height="47"/>
         <image name="time-atlogo" width="65" height="66"/>
+        <image name="vegetarian-Img" width="169" height="114"/>
     </resources>
 </document>
