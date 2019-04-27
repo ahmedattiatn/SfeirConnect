@@ -60,18 +60,6 @@
                                             <action selector="signInWithGoogle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5gb-XQ-0kd"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44e-C4-tMT" customClass="DCButton" customModule="SfeirConnect" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="598" width="344" height="56"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="56" id="xC1-CR-oWY"/>
-                                        </constraints>
-                                        <state key="normal" title="Enter with Facebook">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebook" translatesAutoresizingMaskIntoConstraints="NO" id="62M-nz-SbW">
-                                        <rect key="frame" x="34" y="614" width="13" height="24"/>
-                                    </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="google" translatesAutoresizingMaskIntoConstraints="NO" id="cJs-AT-0yf">
                                         <rect key="frame" x="34" y="681.5" width="23" height="23"/>
                                     </imageView>
@@ -80,17 +68,12 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Sp6-C4-epa" secondAttribute="trailing" constant="30" id="0EL-lZ-9JH"/>
                                     <constraint firstItem="Sp6-C4-epa" firstAttribute="leading" secondItem="Cwe-wW-ewK" secondAttribute="leading" id="0Nd-qS-2tc"/>
-                                    <constraint firstItem="62M-nz-SbW" firstAttribute="centerY" secondItem="44e-C4-tMT" secondAttribute="centerY" id="3sR-Q2-b9o"/>
                                     <constraint firstItem="Sp6-C4-epa" firstAttribute="top" secondItem="b4V-Lk-sFa" secondAttribute="bottom" constant="20" id="AXl-dQ-weg"/>
                                     <constraint firstAttribute="trailing" secondItem="HaL-j0-MbR" secondAttribute="trailing" id="CvM-BE-UsG"/>
                                     <constraint firstAttribute="bottom" secondItem="HaL-j0-MbR" secondAttribute="bottom" constant="15" id="Hne-Ay-Jz3"/>
                                     <constraint firstItem="b4V-Lk-sFa" firstAttribute="top" secondItem="Cwe-wW-ewK" secondAttribute="top" id="JyA-ZJ-ED0"/>
-                                    <constraint firstItem="62M-nz-SbW" firstAttribute="leading" secondItem="Cwe-wW-ewK" secondAttribute="leading" constant="34" id="Mey-sb-euh"/>
                                     <constraint firstItem="LGi-3D-Kb0" firstAttribute="top" secondItem="Sp6-C4-epa" secondAttribute="bottom" constant="8" id="Mox-b0-dWc"/>
                                     <constraint firstItem="HaL-j0-MbR" firstAttribute="leading" secondItem="Cwe-wW-ewK" secondAttribute="leading" id="OG4-Ej-2SV"/>
-                                    <constraint firstAttribute="trailing" secondItem="44e-C4-tMT" secondAttribute="trailing" id="QeC-dJ-5k8"/>
-                                    <constraint firstItem="HaL-j0-MbR" firstAttribute="top" secondItem="44e-C4-tMT" secondAttribute="bottom" constant="11" id="aR0-hQ-qbH"/>
-                                    <constraint firstItem="44e-C4-tMT" firstAttribute="leading" secondItem="Cwe-wW-ewK" secondAttribute="leading" id="dSs-zB-eRw"/>
                                     <constraint firstItem="cJs-AT-0yf" firstAttribute="leading" secondItem="Cwe-wW-ewK" secondAttribute="leading" constant="34" id="e5i-Ot-msL"/>
                                     <constraint firstItem="cJs-AT-0yf" firstAttribute="centerY" secondItem="HaL-j0-MbR" secondAttribute="centerY" id="jKg-E0-mDY"/>
                                     <constraint firstItem="LGi-3D-Kb0" firstAttribute="leading" secondItem="Cwe-wW-ewK" secondAttribute="leading" id="nLB-W0-6Nj"/>
@@ -120,8 +103,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="mg4-cD-BYY"/>
                     <connections>
-                        <outlet property="facebookBtn" destination="44e-C4-tMT" id="03S-dr-Ddy"/>
-                        <outlet property="facebookImageView" destination="62M-nz-SbW" id="Hzh-K8-d7T"/>
                         <outlet property="googleBtn" destination="HaL-j0-MbR" id="WKi-s4-qNS"/>
                         <outlet property="googleImageView" destination="cJs-AT-0yf" id="yG6-le-zhU"/>
                         <outlet property="justeatLabel" destination="LGi-3D-Kb0" id="tzg-4x-ndT"/>
@@ -217,7 +198,7 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="169" height="113"/>
                                                         </imageView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mask" translatesAutoresizingMaskIntoConstraints="NO" id="1Gn-lB-MbZ">
-                                                            <rect key="frame" x="0.0" y="0.0" width="169" height="113.00000000000003"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="169" height="113"/>
                                                         </imageView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dark-bg-cat" translatesAutoresizingMaskIntoConstraints="NO" id="Amq-oS-Nt1">
                                                             <rect key="frame" x="0.0" y="0.0" width="169" height="113"/>
@@ -302,7 +283,6 @@
         <image name="bg-dark-down" width="381" height="325"/>
         <image name="bg-picture" width="381" height="826"/>
         <image name="dark-bg-cat" width="169" height="114"/>
-        <image name="facebook" width="13" height="24"/>
         <image name="google" width="23" height="23"/>
         <image name="mask" width="169" height="98"/>
         <image name="menu" width="34" height="34"/>

@@ -15,10 +15,8 @@ class SignInViewController: UIViewController {
     
     @IBOutlet weak var logoImageView: UIImageView!
     @IBOutlet weak var googleBtn: DCButton!
-    @IBOutlet weak var facebookBtn: DCButton!
     @IBOutlet weak var justeatLabel: UILabel!
     @IBOutlet weak var timeatLabel: UILabel!
-    @IBOutlet weak var facebookImageView: UIImageView!
     @IBOutlet weak var googleImageView: UIImageView!
     
     override func viewDidLoad() {
