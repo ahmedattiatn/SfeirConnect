@@ -30,7 +30,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.image` struct is generated, and contains static references to 12 images.
+  /// This `R.image` struct is generated, and contains static references to 13 images.
   struct image {
     /// Image `bg-dark-down`.
     static let bgDarkDown = Rswift.ImageResource(bundle: R.hostingBundle, name: "bg-dark-down")
@@ -52,6 +52,8 @@ struct R: Rswift.Validatable {
     static let menu = Rswift.ImageResource(bundle: R.hostingBundle, name: "menu")
     /// Image `oval-user`.
     static let ovalUser = Rswift.ImageResource(bundle: R.hostingBundle, name: "oval-user")
+    /// Image `sheet-bottom-fog-12`.
+    static let sheetBottomFog12 = Rswift.ImageResource(bundle: R.hostingBundle, name: "sheet-bottom-fog-12")
     /// Image `time-atlogo`.
     static let timeAtlogo = Rswift.ImageResource(bundle: R.hostingBundle, name: "time-atlogo")
     /// Image `vegetarian-Img`.
@@ -105,6 +107,11 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "oval-user", bundle: ..., traitCollection: ...)`
     static func ovalUser(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.ovalUser, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "sheet-bottom-fog-12", bundle: ..., traitCollection: ...)`
+    static func sheetBottomFog12(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.sheetBottomFog12, compatibleWith: traitCollection)
     }
     
     /// `UIImage(named: "time-atlogo", bundle: ..., traitCollection: ...)`
@@ -223,6 +230,7 @@ struct _R: Rswift.Validatable {
         if UIKit.UIImage(named: "menu", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'menu' is used in storyboard 'Main', but couldn't be loaded.") }
         if UIKit.UIImage(named: "menu-Icon", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'menu-Icon' is used in storyboard 'Main', but couldn't be loaded.") }
         if UIKit.UIImage(named: "oval-user", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'oval-user' is used in storyboard 'Main', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "sheet-bottom-fog-12", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'sheet-bottom-fog-12' is used in storyboard 'Main', but couldn't be loaded.") }
         if UIKit.UIImage(named: "time-atlogo", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'time-atlogo' is used in storyboard 'Main', but couldn't be loaded.") }
         if UIKit.UIImage(named: "vegetarian-Img", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'vegetarian-Img' is used in storyboard 'Main', but couldn't be loaded.") }
         if #available(iOS 11.0, *) {

@@ -41,10 +41,8 @@ extension FoodCategoryViewController : UICollectionViewDelegate {
 extension FoodCategoryViewController : UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let cellWidth :CGFloat = ((collectionView.frame.width)/2) - 8
         // 8 Min Spacing between Cells defined in the storyboardd
-        print(cellWidth)
+        let cellWidth :CGFloat = ((collectionView.frame.width)/2) - 8
         return CGSize(width: cellWidth, height: 113)
-        
     }
 }

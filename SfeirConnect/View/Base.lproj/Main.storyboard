@@ -244,6 +244,9 @@
                                     <outlet property="delegate" destination="Ph2-Tk-IKP" id="w50-7z-vmu"/>
                                 </connections>
                             </collectionView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sheet-bottom-fog-12" translatesAutoresizingMaskIntoConstraints="NO" id="UY7-3J-P7U">
+                                <rect key="frame" x="0.0" y="780" width="414" height="82"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -251,9 +254,12 @@
                             <constraint firstItem="elQ-V3-ZY8" firstAttribute="leading" secondItem="Efn-h2-6Pa" secondAttribute="leading" constant="20" id="9Pc-vN-IiE"/>
                             <constraint firstItem="Efn-h2-6Pa" firstAttribute="trailing" secondItem="RiE-JA-vZk" secondAttribute="trailing" constant="20" id="Dkc-bu-TzW"/>
                             <constraint firstItem="Efn-h2-6Pa" firstAttribute="bottom" secondItem="RiE-JA-vZk" secondAttribute="bottom" id="EcQ-ye-Q0j"/>
+                            <constraint firstItem="UY7-3J-P7U" firstAttribute="leading" secondItem="Efn-h2-6Pa" secondAttribute="leading" id="FPK-lC-Jk2"/>
                             <constraint firstItem="RiE-JA-vZk" firstAttribute="leading" secondItem="Efn-h2-6Pa" secondAttribute="leading" constant="20" id="Fnm-rL-dHV"/>
+                            <constraint firstItem="Efn-h2-6Pa" firstAttribute="trailing" secondItem="UY7-3J-P7U" secondAttribute="trailing" id="JIC-hc-Eu1"/>
                             <constraint firstItem="RiE-JA-vZk" firstAttribute="top" secondItem="elQ-V3-ZY8" secondAttribute="bottom" constant="10" id="fUd-Qp-WMN"/>
                             <constraint firstItem="Efn-h2-6Pa" firstAttribute="trailing" secondItem="elQ-V3-ZY8" secondAttribute="trailing" constant="20" id="mQE-yq-BBd"/>
+                            <constraint firstItem="Efn-h2-6Pa" firstAttribute="bottom" secondItem="UY7-3J-P7U" secondAttribute="bottom" id="wko-xY-PHH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Efn-h2-6Pa"/>
                     </view>
@@ -291,6 +297,7 @@
         <image name="menu" width="34" height="34"/>
         <image name="menu-Icon" width="18" height="13"/>
         <image name="oval-user" width="47" height="47"/>
+        <image name="sheet-bottom-fog-12" width="350" height="82"/>
         <image name="time-atlogo" width="65" height="66"/>
         <image name="vegetarian-Img" width="169" height="114"/>
     </resources>
