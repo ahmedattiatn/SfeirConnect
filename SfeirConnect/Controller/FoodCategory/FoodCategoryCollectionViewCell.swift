@@ -10,4 +10,7 @@ import UIKit
 
 class FoodCategoryCollectionViewCell: UICollectionViewCell {
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
 }

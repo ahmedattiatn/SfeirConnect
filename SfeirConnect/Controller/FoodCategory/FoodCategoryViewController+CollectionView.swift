@@ -8,27 +8,43 @@
 
 import UIKit
 
-private let reuseIdentifier = "Cell"
+private let reuseIdentifier = "foodCategoryCell"
 
-extension FoodCategoryViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+// MARK: - UICollectionViewDataSource
+extension FoodCategoryViewController: UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
     
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
-        return 0
+        return 10
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-        
-        // Configure the cell
-        
-        return cell
+        if  let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? FoodCategoryCollectionViewCell {
+            return cell
+        }
+        return UICollectionViewCell()
     }
 }
 
+// MARK: - UICollectionViewDelegate
+extension FoodCategoryViewController : UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("Item Selected at\(indexPath)")
+    }
+}
+
+// MARK: - UICollectionViewDelegateFlowLayout
+extension FoodCategoryViewController : UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let cellWidth :CGFloat = ((collectionView.frame.width)/2) - 8
+        // 8 Min Spacing between Cells defined in the storyboardd
+        print(cellWidth)
+        return CGSize(width: cellWidth, height: 113)
+        
+    }
+}
