@@ -12,12 +12,12 @@
 		66A637F222730D1F00BA2C38 /* AnalyticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A637F122730D1F00BA2C38 /* AnalyticsManager.swift */; };
 		66A637FB22733CCC00BA2C38 /* FoodCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A637FA22733CCC00BA2C38 /* FoodCategoryCollectionViewCell.swift */; };
 		66A637FD22733CFD00BA2C38 /* FoodCategoryViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A637FC22733CFD00BA2C38 /* FoodCategoryViewController+CollectionView.swift */; };
+		66A6382822783C1200BA2C38 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A6382722783C1200BA2C38 /* R.generated.swift */; };
 		66F914B622705AE1009839FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F914B522705AE1009839FD /* AppDelegate.swift */; };
 		66F914B822705AE1009839FD /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F914B722705AE1009839FD /* SignInViewController.swift */; };
 		66F914BB22705AE1009839FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66F914B922705AE1009839FD /* Main.storyboard */; };
 		66F914BD22705AE2009839FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66F914BC22705AE2009839FD /* Assets.xcassets */; };
 		66F914C022705AE2009839FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66F914BE22705AE2009839FD /* LaunchScreen.storyboard */; };
-		66F914CA22705FA3009839FD /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F914C922705FA3009839FD /* R.generated.swift */; };
 		66F914D82270AAFD009839FD /* UIButton+DC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F914D72270AAFD009839FD /* UIButton+DC.swift */; };
 		66F914DA2270AC92009839FD /* UIColor+DC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F914D92270AC92009839FD /* UIColor+DC.swift */; };
 		66F914DD2271A51D009839FD /* SignInViewController+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F914DC2271A51D009839FD /* SignInViewController+Animation.swift */; };
@@ -29,6 +29,7 @@
 		66A637F122730D1F00BA2C38 /* AnalyticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsManager.swift; sourceTree = "<group>"; };
 		66A637FA22733CCC00BA2C38 /* FoodCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		66A637FC22733CFD00BA2C38 /* FoodCategoryViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FoodCategoryViewController+CollectionView.swift"; sourceTree = "<group>"; };
+		66A6382722783C1200BA2C38 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		66F914B222705AE1009839FD /* SfeirConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SfeirConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66F914B522705AE1009839FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66F914B722705AE1009839FD /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -36,7 +37,6 @@
 		66F914BC22705AE2009839FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66F914BF22705AE2009839FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66F914C122705AE2009839FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		66F914C922705FA3009839FD /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		66F914D72270AAFD009839FD /* UIButton+DC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+DC.swift"; sourceTree = "<group>"; };
 		66F914D92270AC92009839FD /* UIColor+DC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+DC.swift"; sourceTree = "<group>"; };
 		66F914DC2271A51D009839FD /* SignInViewController+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignInViewController+Animation.swift"; sourceTree = "<group>"; };
@@ -102,11 +102,19 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		66A6382622783BE300BA2C38 /* GeneratedRSwift */ = {
+			isa = PBXGroup;
+			children = (
+				66A6382722783C1200BA2C38 /* R.generated.swift */,
+			);
+			path = GeneratedRSwift;
+			sourceTree = "<group>";
+		};
 		66F914A922705AE1009839FD = {
 			isa = PBXGroup;
 			children = (
+				66A6382622783BE300BA2C38 /* GeneratedRSwift */,
 				66F914DE2271B178009839FD /* FireBase */,
-				66F914D122708BEC009839FD /* RSwfit */,
 				66F914B422705AE1009839FD /* SfeirConnect */,
 				66F914B322705AE1009839FD /* Products */,
 				5204B70E05420BC4698089BC /* Pods */,
@@ -177,14 +185,6 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
-		66F914D122708BEC009839FD /* RSwfit */ = {
-			isa = PBXGroup;
-			children = (
-				66F914C922705FA3009839FD /* R.generated.swift */,
-			);
-			path = RSwfit;
-			sourceTree = "<group>";
-		};
 		66F914D4227090E7009839FD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +219,7 @@
 			buildConfigurationList = 66F914C422705AE2009839FD /* Build configuration list for PBXNativeTarget "SfeirConnect" */;
 			buildPhases = (
 				05593785C0E6F2A89919E16B /* [CP] Check Pods Manifest.lock */,
+				66A6381F2277400600BA2C38 /* ShellScript */,
 				66F914C822705DCC009839FD /* ShellScript */,
 				66F914AE22705AE1009839FD /* Sources */,
 				66F914AF22705AE1009839FD /* Frameworks */,
@@ -345,6 +346,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Fabric/run\"\n";
 		};
+		66A6381F2277400600BA2C38 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
 		66F914C822705DCC009839FD /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -358,11 +376,11 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				$SRCROOT/R.generated.swift,
+				"$SRCROOT/GeneratedRSwift/R.generated.swift",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/GeneratedRSwift/R.generated.swift\"\n";
 		};
 		C920F8807B12F23F6118EFAB /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -400,9 +418,9 @@
 				66F914DA2270AC92009839FD /* UIColor+DC.swift in Sources */,
 				66F914B822705AE1009839FD /* SignInViewController.swift in Sources */,
 				66F914B622705AE1009839FD /* AppDelegate.swift in Sources */,
-				66F914CA22705FA3009839FD /* R.generated.swift in Sources */,
 				66A637E62271D22300BA2C38 /* FoodCategoryViewController.swift in Sources */,
 				66A637F222730D1F00BA2C38 /* AnalyticsManager.swift in Sources */,
+				66A6382822783C1200BA2C38 /* R.generated.swift in Sources */,
 				66F914DD2271A51D009839FD /* SignInViewController+Animation.swift in Sources */,
 				66A637FD22733CFD00BA2C38 /* FoodCategoryViewController+CollectionView.swift in Sources */,
 			);

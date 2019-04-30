@@ -13,7 +13,7 @@ class FoodCategoryViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    
+
     /*
      // MARK: - Navigation
      
@@ -23,5 +23,5 @@ class FoodCategoryViewController: UIViewController {
      // Pass the selected object to the new view controller.
      }
      */
-    
+
 }

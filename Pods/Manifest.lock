@@ -77,6 +77,7 @@ PODS:
   - R.swift (5.0.3):
     - R.swift.Library (~> 5.0.0)
   - R.swift.Library (5.0.1)
+  - SwiftLint (0.32.0)
   - TestFairy (1.19.4)
 
 DEPENDENCIES:
@@ -86,6 +87,7 @@ DEPENDENCIES:
   - Firebase/Core
   - GoogleSignIn
   - R.swift
+  - SwiftLint
   - TestFairy
 
 SPEC REPOS:
@@ -106,6 +108,7 @@ SPEC REPOS:
     - nanopb
     - R.swift
     - R.swift.Library
+    - SwiftLint
     - TestFairy
 
 SPEC CHECKSUMS:
@@ -125,8 +128,9 @@ SPEC CHECKSUMS:
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   R.swift: f5a87643b91ea569d23d6afb3eee9c743edde239
   R.swift.Library: cfe85d569d9bae6cb262922db130e7c3a7a5fad1
+  SwiftLint: 009a898ef2a1c851f45e1b59349bf6ff2ddc990d
   TestFairy: 35fac774cbebab9c441b40d78e08caacba4ee119
 
-PODFILE CHECKSUM: 0fb1b2cc9c13b99cd50ca9a8b9fbf3cc8d59ee15
+PODFILE CHECKSUM: e22c54f359d74e7b42b5e118628792861ffcc54c
 
 COCOAPODS: 1.6.1

@@ -116,12 +116,19 @@
 			<key>orderHint</key>
 			<integer>15</integer>
 		</dict>
-		<key>TestFairy.xcscheme</key>
+		<key>SwiftLint.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>17</integer>
+		</dict>
+		<key>TestFairy.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>18</integer>
 		</dict>
 		<key>nanopb.xcscheme</key>
 		<dict>
