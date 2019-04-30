@@ -21,4 +21,15 @@ class FoodCategoryCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
     }
+
+    override var isSelected: Bool {
+        didSet {
+            if self.isSelected {
+                // Start Animation
+                //self.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
+            } else {
+                // self.transform = CGAffineTransform.identity
+            }
+        }
+    }
 }

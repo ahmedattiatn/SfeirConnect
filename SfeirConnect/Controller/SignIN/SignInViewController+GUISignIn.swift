@@ -29,7 +29,7 @@ extension SignInViewController: GIDSignInDelegate, GIDSignInUIDelegate {
             }
             print("successfuly logged into Firebase with Google", user?.user.uid as Any)
             // Access the storyboard and fetch an instance of the view controller
-            self.performSegue(withIdentifier: "HomeViewControllerSegue", sender: nil)
+            self.performSegue(withIdentifier: R.segue.signInViewController.homeViewControllerSegue, sender: nil)
         })
     }
 

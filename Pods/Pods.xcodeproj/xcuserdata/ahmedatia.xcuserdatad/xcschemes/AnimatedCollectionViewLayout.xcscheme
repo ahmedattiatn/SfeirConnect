@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "09A5C7131EE632F2F0789D98DE8D7A92"
-               BuildableName = "SwiftLint"
-               BlueprintName = "SwiftLint"
+               BlueprintIdentifier = "D6B9B85DCB8CB188171BB04F433EA3B4"
+               BuildableName = "AnimatedCollectionViewLayout.framework"
+               BlueprintName = "AnimatedCollectionViewLayout"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "09A5C7131EE632F2F0789D98DE8D7A92"
-            BuildableName = "SwiftLint"
-            BlueprintName = "SwiftLint"
+            BlueprintIdentifier = "D6B9B85DCB8CB188171BB04F433EA3B4"
+            BuildableName = "AnimatedCollectionViewLayout.framework"
+            BlueprintName = "AnimatedCollectionViewLayout"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

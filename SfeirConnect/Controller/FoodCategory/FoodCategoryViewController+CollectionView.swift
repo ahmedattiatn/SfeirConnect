@@ -8,8 +8,6 @@
 
 import UIKit
 
-private let reuseIdentifier = "foodCategoryCell"
-
 // MARK: - UICollectionViewDataSource
 extension FoodCategoryViewController: UICollectionViewDataSource {
 
@@ -22,7 +20,7 @@ extension FoodCategoryViewController: UICollectionViewDataSource {
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if  let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? FoodCategoryCollectionViewCell {
+        if  let cell = collectionView.dequeueReusableCell(withReuseIdentifier: R.reuseIdentifier.foodCategoryCell, for: indexPath) {
             cell.updateUI(food: foodViewModel.categoryFoodList[indexPath.row])
             return cell
         }
@@ -35,6 +33,7 @@ extension FoodCategoryViewController: UICollectionViewDelegate {
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("Item Selected at\(indexPath)")
+        self.performSegue(withIdentifier: R.segue.foodCategoryViewController.usersViewControllerSegue, sender: nil)
     }
 }
 

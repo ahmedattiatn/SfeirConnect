@@ -16,6 +16,8 @@
 		66A6382A2278516C00BA2C38 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A638292278516C00BA2C38 /* Food.swift */; };
 		66A6382C22786B5900BA2C38 /* FoodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A6382B22786B5900BA2C38 /* FoodViewModel.swift */; };
 		66A6382E2278779200BA2C38 /* SignInViewController+GUISignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A6382D2278779200BA2C38 /* SignInViewController+GUISignIn.swift */; };
+		66A638322278858300BA2C38 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A638312278858300BA2C38 /* UsersViewController.swift */; };
+		66A6383522788FB300BA2C38 /* UsersViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A6383422788FB300BA2C38 /* UsersViewController+CollectionView.swift */; };
 		66F914B622705AE1009839FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F914B522705AE1009839FD /* AppDelegate.swift */; };
 		66F914B822705AE1009839FD /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F914B722705AE1009839FD /* SignInViewController.swift */; };
 		66F914BB22705AE1009839FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66F914B922705AE1009839FD /* Main.storyboard */; };
@@ -34,8 +36,10 @@
 		66A637FC22733CFD00BA2C38 /* FoodCategoryViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FoodCategoryViewController+CollectionView.swift"; sourceTree = "<group>"; };
 		66A6382722783C1200BA2C38 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		66A638292278516C00BA2C38 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Food.swift; path = GeneratedRSwift/Food.swift; sourceTree = SOURCE_ROOT; };
-		66A6382B22786B5900BA2C38 /* FoodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FoodViewModel.swift; path = GeneratedRSwift/FoodViewModel.swift; sourceTree = SOURCE_ROOT; };
+		66A6382B22786B5900BA2C38 /* FoodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FoodViewModel.swift; path = SfeirConnect/ModelView/FoodViewModel.swift; sourceTree = SOURCE_ROOT; };
 		66A6382D2278779200BA2C38 /* SignInViewController+GUISignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignInViewController+GUISignIn.swift"; sourceTree = "<group>"; };
+		66A638312278858300BA2C38 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		66A6383422788FB300BA2C38 /* UsersViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UsersViewController+CollectionView.swift"; sourceTree = "<group>"; };
 		66F914B222705AE1009839FD /* SfeirConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SfeirConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66F914B522705AE1009839FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66F914B722705AE1009839FD /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +120,22 @@
 			path = GeneratedRSwift;
 			sourceTree = "<group>";
 		};
+		66A6382F22787BCA00BA2C38 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		66A638302278854C00BA2C38 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				66A638312278858300BA2C38 /* UsersViewController.swift */,
+				66A6383422788FB300BA2C38 /* UsersViewController+CollectionView.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
 		66F914A922705AE1009839FD = {
 			isa = PBXGroup;
 			children = (
@@ -139,9 +159,9 @@
 		66F914B422705AE1009839FD /* SfeirConnect */ = {
 			isa = PBXGroup;
 			children = (
+				66A6382F22787BCA00BA2C38 /* Network */,
 				66F914CF227081C9009839FD /* Common */,
 				66F914D4227090E7009839FD /* Controller */,
-				66F914CE227081BE009839FD /* Network */,
 				66F914CD227081B6009839FD /* ModelView */,
 				66F914CC227081B0009839FD /* View */,
 				66F914CB22708178009839FD /* Model */,
@@ -177,18 +197,11 @@
 			path = ModelView;
 			sourceTree = "<group>";
 		};
-		66F914CE227081BE009839FD /* Network */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
 		66F914CF227081C9009839FD /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				66A637F322730D3100BA2C38 /* Extension */,
 				66A637F122730D1F00BA2C38 /* AnalyticsManager.swift */,
+				66A637F322730D3100BA2C38 /* Extension */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -196,6 +209,7 @@
 		66F914D4227090E7009839FD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				66A638302278854C00BA2C38 /* Users */,
 				66A637E42271D1F800BA2C38 /* FoodCategory */,
 				66F914DB2271A4E2009839FD /* SignIN */,
 			);
@@ -319,6 +333,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SfeirConnect/Pods-SfeirConnect-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AnimatedCollectionViewLayout/AnimatedCollectionViewLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
@@ -327,6 +342,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AnimatedCollectionViewLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
@@ -425,12 +441,14 @@
 				66A6382A2278516C00BA2C38 /* Food.swift in Sources */,
 				66F914D82270AAFD009839FD /* UIButton+DC.swift in Sources */,
 				66A6382C22786B5900BA2C38 /* FoodViewModel.swift in Sources */,
+				66A638322278858300BA2C38 /* UsersViewController.swift in Sources */,
 				66A637FB22733CCC00BA2C38 /* FoodCategoryCollectionViewCell.swift in Sources */,
 				66F914DA2270AC92009839FD /* UIColor+DC.swift in Sources */,
 				66F914B822705AE1009839FD /* SignInViewController.swift in Sources */,
 				66F914B622705AE1009839FD /* AppDelegate.swift in Sources */,
 				66A637E62271D22300BA2C38 /* FoodCategoryViewController.swift in Sources */,
 				66A637F222730D1F00BA2C38 /* AnalyticsManager.swift in Sources */,
+				66A6383522788FB300BA2C38 /* UsersViewController+CollectionView.swift in Sources */,
 				66A6382822783C1200BA2C38 /* R.generated.swift in Sources */,
 				66A6382E2278779200BA2C38 /* SignInViewController+GUISignIn.swift in Sources */,
 				66F914DD2271A51D009839FD /* SignInViewController+Animation.swift in Sources */,
