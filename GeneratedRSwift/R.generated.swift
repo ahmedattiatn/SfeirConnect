@@ -30,8 +30,12 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.image` struct is generated, and contains static references to 13 images.
+  /// This `R.image` struct is generated, and contains static references to 21 images.
   struct image {
+    /// Image `american`.
+    static let american = Rswift.ImageResource(bundle: R.hostingBundle, name: "american")
+    /// Image `asian`.
+    static let asian = Rswift.ImageResource(bundle: R.hostingBundle, name: "asian")
     /// Image `bg-dark-down`.
     static let bgDarkDown = Rswift.ImageResource(bundle: R.hostingBundle, name: "bg-dark-down")
     /// Image `bg-dark`.
@@ -40,24 +44,46 @@ struct R: Rswift.Validatable {
     static let bgPicture = Rswift.ImageResource(bundle: R.hostingBundle, name: "bg-picture")
     /// Image `dark-bg-cat`.
     static let darkBgCat = Rswift.ImageResource(bundle: R.hostingBundle, name: "dark-bg-cat")
-    /// Image `facebook`.
-    static let facebook = Rswift.ImageResource(bundle: R.hostingBundle, name: "facebook")
+    /// Image `gluten`.
+    static let gluten = Rswift.ImageResource(bundle: R.hostingBundle, name: "gluten")
     /// Image `google`.
     static let google = Rswift.ImageResource(bundle: R.hostingBundle, name: "google")
+    /// Image `helathy`.
+    static let helathy = Rswift.ImageResource(bundle: R.hostingBundle, name: "helathy")
+    /// Image `italian`.
+    static let italian = Rswift.ImageResource(bundle: R.hostingBundle, name: "italian")
+    /// Image `jap`.
+    static let jap = Rswift.ImageResource(bundle: R.hostingBundle, name: "jap")
     /// Image `mask`.
     static let mask = Rswift.ImageResource(bundle: R.hostingBundle, name: "mask")
     /// Image `menu-Icon`.
     static let menuIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "menu-Icon")
     /// Image `menu`.
     static let menu = Rswift.ImageResource(bundle: R.hostingBundle, name: "menu")
+    /// Image `mexican`.
+    static let mexican = Rswift.ImageResource(bundle: R.hostingBundle, name: "mexican")
     /// Image `oval-user`.
     static let ovalUser = Rswift.ImageResource(bundle: R.hostingBundle, name: "oval-user")
     /// Image `sheet-bottom-fog-12`.
     static let sheetBottomFog12 = Rswift.ImageResource(bundle: R.hostingBundle, name: "sheet-bottom-fog-12")
+    /// Image `spanish`.
+    static let spanish = Rswift.ImageResource(bundle: R.hostingBundle, name: "spanish")
     /// Image `time-atlogo`.
     static let timeAtlogo = Rswift.ImageResource(bundle: R.hostingBundle, name: "time-atlogo")
+    /// Image `vegan`.
+    static let vegan = Rswift.ImageResource(bundle: R.hostingBundle, name: "vegan")
     /// Image `vegetarian-Img`.
     static let vegetarianImg = Rswift.ImageResource(bundle: R.hostingBundle, name: "vegetarian-Img")
+    
+    /// `UIImage(named: "american", bundle: ..., traitCollection: ...)`
+    static func american(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.american, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "asian", bundle: ..., traitCollection: ...)`
+    static func asian(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.asian, compatibleWith: traitCollection)
+    }
     
     /// `UIImage(named: "bg-dark", bundle: ..., traitCollection: ...)`
     static func bgDark(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
@@ -79,14 +105,29 @@ struct R: Rswift.Validatable {
       return UIKit.UIImage(resource: R.image.darkBgCat, compatibleWith: traitCollection)
     }
     
-    /// `UIImage(named: "facebook", bundle: ..., traitCollection: ...)`
-    static func facebook(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
-      return UIKit.UIImage(resource: R.image.facebook, compatibleWith: traitCollection)
+    /// `UIImage(named: "gluten", bundle: ..., traitCollection: ...)`
+    static func gluten(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.gluten, compatibleWith: traitCollection)
     }
     
     /// `UIImage(named: "google", bundle: ..., traitCollection: ...)`
     static func google(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.google, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "helathy", bundle: ..., traitCollection: ...)`
+    static func helathy(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.helathy, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "italian", bundle: ..., traitCollection: ...)`
+    static func italian(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.italian, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "jap", bundle: ..., traitCollection: ...)`
+    static func jap(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.jap, compatibleWith: traitCollection)
     }
     
     /// `UIImage(named: "mask", bundle: ..., traitCollection: ...)`
@@ -104,6 +145,11 @@ struct R: Rswift.Validatable {
       return UIKit.UIImage(resource: R.image.menuIcon, compatibleWith: traitCollection)
     }
     
+    /// `UIImage(named: "mexican", bundle: ..., traitCollection: ...)`
+    static func mexican(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.mexican, compatibleWith: traitCollection)
+    }
+    
     /// `UIImage(named: "oval-user", bundle: ..., traitCollection: ...)`
     static func ovalUser(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.ovalUser, compatibleWith: traitCollection)
@@ -114,9 +160,19 @@ struct R: Rswift.Validatable {
       return UIKit.UIImage(resource: R.image.sheetBottomFog12, compatibleWith: traitCollection)
     }
     
+    /// `UIImage(named: "spanish", bundle: ..., traitCollection: ...)`
+    static func spanish(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.spanish, compatibleWith: traitCollection)
+    }
+    
     /// `UIImage(named: "time-atlogo", bundle: ..., traitCollection: ...)`
     static func timeAtlogo(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.timeAtlogo, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "vegan", bundle: ..., traitCollection: ...)`
+    static func vegan(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.vegan, compatibleWith: traitCollection)
     }
     
     /// `UIImage(named: "vegetarian-Img", bundle: ..., traitCollection: ...)`

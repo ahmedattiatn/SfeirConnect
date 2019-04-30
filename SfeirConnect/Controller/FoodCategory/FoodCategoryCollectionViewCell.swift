@@ -10,6 +10,14 @@ import UIKit
 
 class FoodCategoryCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var foodImage: UIImageView!
+    @IBOutlet weak var foodLabel: UILabel!
+
+    func updateUI(food: Food) {
+        foodImage.image = food.imageName
+        foodLabel.text = food.name
+    }
+
     override func awakeFromNib() {
         super.awakeFromNib()
     }

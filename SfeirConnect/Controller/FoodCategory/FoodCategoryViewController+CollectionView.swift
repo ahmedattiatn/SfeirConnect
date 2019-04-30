@@ -18,11 +18,12 @@ extension FoodCategoryViewController: UICollectionViewDataSource {
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return foodViewModel.categoryFoodList.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if  let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? FoodCategoryCollectionViewCell {
+            cell.updateUI(food: foodViewModel.categoryFoodList[indexPath.row])
             return cell
         }
         return UICollectionViewCell()
@@ -41,8 +42,8 @@ extension FoodCategoryViewController: UICollectionViewDelegate {
 extension FoodCategoryViewController: UICollectionViewDelegateFlowLayout {
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        // 8 Min Spacing between Cells defined in the storyboardd
-        let cellWidth: CGFloat = ((collectionView.frame.width)/2) - 8
+        // 5 Min Spacing between Cells defined in the storyboardd
+        let cellWidth: CGFloat = ((collectionView.frame.width)/2) - 5
         return CGSize(width: cellWidth, height: 113)
     }
 }

@@ -124,7 +124,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="elQ-V3-ZY8">
-                                <rect key="frame" x="20" y="65" width="374" height="130"/>
+                                <rect key="frame" x="20" y="65" width="374" height="120"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your taste" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9Z-Iq-hTg">
                                         <rect key="frame" x="54" y="0.0" width="146.5" height="21.5"/>
@@ -164,7 +164,7 @@
                                     <constraint firstItem="2IK-FB-Hje" firstAttribute="top" secondItem="w9Z-Iq-hTg" secondAttribute="bottom" id="ZhD-82-hIz"/>
                                     <constraint firstItem="N5x-it-qMA" firstAttribute="top" secondItem="elQ-V3-ZY8" secondAttribute="top" id="bKk-zl-xRp"/>
                                     <constraint firstItem="3h6-4C-WZy" firstAttribute="top" secondItem="2IK-FB-Hje" secondAttribute="bottom" constant="20" id="ffR-MJ-fwg"/>
-                                    <constraint firstAttribute="height" constant="130" id="gJ6-8B-nxw"/>
+                                    <constraint firstAttribute="height" constant="120" id="gJ6-8B-nxw"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="3h6-4C-WZy" secondAttribute="trailing" constant="55" id="h5D-Bu-AdD"/>
                                     <constraint firstItem="c9D-p8-Ir3" firstAttribute="centerY" secondItem="N5x-it-qMA" secondAttribute="centerY" id="luZ-Si-KqF"/>
                                     <constraint firstItem="Dc6-CN-HUc" firstAttribute="top" secondItem="elQ-V3-ZY8" secondAttribute="top" id="m9y-1F-hPg"/>
@@ -175,9 +175,9 @@
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="RiE-JA-vZk">
-                                <rect key="frame" x="20" y="205" width="374" height="657"/>
+                                <rect key="frame" x="20" y="195" width="374" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="12" minimumInteritemSpacing="8" id="zHP-un-BgV">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="8" minimumInteritemSpacing="5" id="zHP-un-BgV">
                                     <size key="itemSize" width="169" height="113"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -237,6 +237,10 @@
                                             <constraint firstItem="9GV-Iq-Qnf" firstAttribute="leading" secondItem="R7Z-uv-ge9" secondAttribute="leading" id="Nmj-tf-BzX"/>
                                             <constraint firstItem="9GV-Iq-Qnf" firstAttribute="top" secondItem="R7Z-uv-ge9" secondAttribute="top" id="fKw-h3-kWq"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="foodImage" destination="GGv-eD-6aG" id="DdT-tY-kb0"/>
+                                            <outlet property="foodLabel" destination="59C-SU-gft" id="zsU-bk-3kH"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>

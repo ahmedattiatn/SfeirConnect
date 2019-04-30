@@ -145,8 +145,6 @@ public class DCButton: UIButton {
             self.backgroundColor = color
             self.borderColor = color
             self.setTitleColor(.white, for: .normal)
-        }) { _ in
-            completion?()
-        }
+        })
     }
 }

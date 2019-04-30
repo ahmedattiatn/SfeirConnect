@@ -13,6 +13,9 @@
 		66A637FB22733CCC00BA2C38 /* FoodCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A637FA22733CCC00BA2C38 /* FoodCategoryCollectionViewCell.swift */; };
 		66A637FD22733CFD00BA2C38 /* FoodCategoryViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A637FC22733CFD00BA2C38 /* FoodCategoryViewController+CollectionView.swift */; };
 		66A6382822783C1200BA2C38 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A6382722783C1200BA2C38 /* R.generated.swift */; };
+		66A6382A2278516C00BA2C38 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A638292278516C00BA2C38 /* Food.swift */; };
+		66A6382C22786B5900BA2C38 /* FoodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A6382B22786B5900BA2C38 /* FoodViewModel.swift */; };
+		66A6382E2278779200BA2C38 /* SignInViewController+GUISignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A6382D2278779200BA2C38 /* SignInViewController+GUISignIn.swift */; };
 		66F914B622705AE1009839FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F914B522705AE1009839FD /* AppDelegate.swift */; };
 		66F914B822705AE1009839FD /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F914B722705AE1009839FD /* SignInViewController.swift */; };
 		66F914BB22705AE1009839FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66F914B922705AE1009839FD /* Main.storyboard */; };
@@ -30,6 +33,9 @@
 		66A637FA22733CCC00BA2C38 /* FoodCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		66A637FC22733CFD00BA2C38 /* FoodCategoryViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FoodCategoryViewController+CollectionView.swift"; sourceTree = "<group>"; };
 		66A6382722783C1200BA2C38 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		66A638292278516C00BA2C38 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Food.swift; path = GeneratedRSwift/Food.swift; sourceTree = SOURCE_ROOT; };
+		66A6382B22786B5900BA2C38 /* FoodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FoodViewModel.swift; path = GeneratedRSwift/FoodViewModel.swift; sourceTree = SOURCE_ROOT; };
+		66A6382D2278779200BA2C38 /* SignInViewController+GUISignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignInViewController+GUISignIn.swift"; sourceTree = "<group>"; };
 		66F914B222705AE1009839FD /* SfeirConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SfeirConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66F914B522705AE1009839FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66F914B722705AE1009839FD /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +155,7 @@
 		66F914CB22708178009839FD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				66A638292278516C00BA2C38 /* Food.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -165,6 +172,7 @@
 		66F914CD227081B6009839FD /* ModelView */ = {
 			isa = PBXGroup;
 			children = (
+				66A6382B22786B5900BA2C38 /* FoodViewModel.swift */,
 			);
 			path = ModelView;
 			sourceTree = "<group>";
@@ -199,6 +207,7 @@
 			children = (
 				66F914B722705AE1009839FD /* SignInViewController.swift */,
 				66F914DC2271A51D009839FD /* SignInViewController+Animation.swift */,
+				66A6382D2278779200BA2C38 /* SignInViewController+GUISignIn.swift */,
 			);
 			path = SignIN;
 			sourceTree = "<group>";
@@ -376,7 +385,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$SRCROOT/GeneratedRSwift/R.generated.swift",
+				$SRCROOT/GeneratedRSwift/R.generated.swift,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -413,7 +422,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66A6382A2278516C00BA2C38 /* Food.swift in Sources */,
 				66F914D82270AAFD009839FD /* UIButton+DC.swift in Sources */,
+				66A6382C22786B5900BA2C38 /* FoodViewModel.swift in Sources */,
 				66A637FB22733CCC00BA2C38 /* FoodCategoryCollectionViewCell.swift in Sources */,
 				66F914DA2270AC92009839FD /* UIColor+DC.swift in Sources */,
 				66F914B822705AE1009839FD /* SignInViewController.swift in Sources */,
@@ -421,6 +432,7 @@
 				66A637E62271D22300BA2C38 /* FoodCategoryViewController.swift in Sources */,
 				66A637F222730D1F00BA2C38 /* AnalyticsManager.swift in Sources */,
 				66A6382822783C1200BA2C38 /* R.generated.swift in Sources */,
+				66A6382E2278779200BA2C38 /* SignInViewController+GUISignIn.swift in Sources */,
 				66F914DD2271A51D009839FD /* SignInViewController+Animation.swift in Sources */,
 				66A637FD22733CFD00BA2C38 /* FoodCategoryViewController+CollectionView.swift in Sources */,
 			);
