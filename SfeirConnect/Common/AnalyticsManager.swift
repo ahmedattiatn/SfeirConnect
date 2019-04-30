@@ -10,10 +10,9 @@ import Foundation
 import Firebase
 
 class AnalyticsManager {
-    
+
     /** ----------------------------TAGS----------------------------**/
-    
-    
+
     /* --------Events-------- */
     /** Unlock Goals **/
     static let unlockLdlEventID: String = "Complete Cholesterol activation process"
@@ -40,8 +39,7 @@ class AnalyticsManager {
     static let openingTheAPPEventID: String = "Opening the app at least 5 times"
     /** RateApp **/
     static let rateAppEventID: String = "Rate the App"
-    
-    
+
     /* --------Screens-------- */
     //Splash Screen
     static let screenSplashScreenEventID: String = "Splash Screen"
@@ -115,14 +113,14 @@ class AnalyticsManager {
     static let screenBloodPressurSelectTreatmentEventID: String = "BloodPressur-Activation select treatment screen"
     static let screenBloodPressurGuidelinesEventID: String = "BloodPressur-Activation guidelines screen"
     static let screenBloodPressurRecordMeasureEventID: String = "BloodPressur-Record new measure screen"
-    
-    static func trackUserEventWith(tag:String) {
+
+    static func trackUserEventWith(tag: String) {
         Analytics.logEvent(AnalyticsEventSelectContent, parameters: [
             AnalyticsParameterContentType: tag
             ])
     }
-    
-    static func trackScreenWith(screenName:String) {
+
+    static func trackScreenWith(screenName: String) {
         Analytics.setScreenName(screenName, screenClass: screenName)
     }
 }

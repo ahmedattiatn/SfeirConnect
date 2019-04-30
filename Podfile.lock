@@ -1,4 +1,5 @@
 PODS:
+  - AnimatedCollectionViewLayout (0.6.0)
   - Crashlytics (3.12.0):
     - Fabric (~> 1.9.0)
   - Fabric (1.9.0)
@@ -77,19 +78,23 @@ PODS:
   - R.swift (5.0.3):
     - R.swift.Library (~> 5.0.0)
   - R.swift.Library (5.0.1)
+  - SwiftLint (0.32.0)
   - TestFairy (1.19.4)
 
 DEPENDENCIES:
+  - AnimatedCollectionViewLayout
   - Crashlytics (~> 3.12.0)
   - Fabric (~> 1.9.0)
   - Firebase/Auth
   - Firebase/Core
   - GoogleSignIn
   - R.swift
+  - SwiftLint
   - TestFairy
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - AnimatedCollectionViewLayout
     - Crashlytics
     - Fabric
     - Firebase
@@ -106,9 +111,11 @@ SPEC REPOS:
     - nanopb
     - R.swift
     - R.swift.Library
+    - SwiftLint
     - TestFairy
 
 SPEC CHECKSUMS:
+  AnimatedCollectionViewLayout: f2c4e8dda4e3f1678ad6c0b39273a31b19bc935d
   Crashlytics: 07fb167b1694128c1c9a5a5cc319b0e9c3ca0933
   Fabric: f988e33c97f08930a413e08123064d2e5f68d655
   Firebase: 0c8cf33f266410c61ab3e2265cfa412200351d9c
@@ -125,8 +132,9 @@ SPEC CHECKSUMS:
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   R.swift: f5a87643b91ea569d23d6afb3eee9c743edde239
   R.swift.Library: cfe85d569d9bae6cb262922db130e7c3a7a5fad1
+  SwiftLint: 009a898ef2a1c851f45e1b59349bf6ff2ddc990d
   TestFairy: 35fac774cbebab9c441b40d78e08caacba4ee119
 
-PODFILE CHECKSUM: 0fb1b2cc9c13b99cd50ca9a8b9fbf3cc8d59ee15
+PODFILE CHECKSUM: 9cd94998fffa5c57e5b255d1ff201e8fd7bf4f19
 
 COCOAPODS: 1.6.1
