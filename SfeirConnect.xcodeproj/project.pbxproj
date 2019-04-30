@@ -35,7 +35,7 @@
 		66A637FA22733CCC00BA2C38 /* FoodCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		66A637FC22733CFD00BA2C38 /* FoodCategoryViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FoodCategoryViewController+CollectionView.swift"; sourceTree = "<group>"; };
 		66A6382722783C1200BA2C38 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
-		66A638292278516C00BA2C38 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Food.swift; path = GeneratedRSwift/Food.swift; sourceTree = SOURCE_ROOT; };
+		66A638292278516C00BA2C38 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Food.swift; path = SfeirConnect/Model/Food.swift; sourceTree = SOURCE_ROOT; };
 		66A6382B22786B5900BA2C38 /* FoodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FoodViewModel.swift; path = SfeirConnect/ModelView/FoodViewModel.swift; sourceTree = SOURCE_ROOT; };
 		66A6382D2278779200BA2C38 /* SignInViewController+GUISignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignInViewController+GUISignIn.swift"; sourceTree = "<group>"; };
 		66A638312278858300BA2C38 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
@@ -85,14 +85,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		66A637E42271D1F800BA2C38 /* FoodCategory */ = {
+		66A637E42271D1F800BA2C38 /* Food */ = {
 			isa = PBXGroup;
 			children = (
 				66A637E52271D22300BA2C38 /* FoodCategoryViewController.swift */,
 				66A637FA22733CCC00BA2C38 /* FoodCategoryCollectionViewCell.swift */,
 				66A637FC22733CFD00BA2C38 /* FoodCategoryViewController+CollectionView.swift */,
 			);
-			path = FoodCategory;
+			path = Food;
 			sourceTree = "<group>";
 		};
 		66A637E92271D9E700BA2C38 /* AppDelegate */ = {
@@ -210,7 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				66A638302278854C00BA2C38 /* Users */,
-				66A637E42271D1F800BA2C38 /* FoodCategory */,
+				66A637E42271D1F800BA2C38 /* Food */,
 				66F914DB2271A4E2009839FD /* SignIN */,
 			);
 			path = Controller;
