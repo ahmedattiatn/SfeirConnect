@@ -19,7 +19,9 @@ extension UsersViewController: UICollectionViewDelegate, UICollectionViewDataSou
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if  let cell = collectionView.dequeueReusableCell(withReuseIdentifier: R.reuseIdentifier.usersCollectionViewCell, for: indexPath) {
-            //  cell.updateUI(food: foodViewModel.categoryFoodList[indexPath.row])
+            if let imageUser = usersImage.randomItem() {
+                cell.updateUI(userImage: imageUser!)
+            }
             return cell
         }
         return UICollectionViewCell()

@@ -13,6 +13,8 @@ class UsersViewController: UIViewController {
 
     @IBOutlet weak var userscollectionView: UICollectionView!
 
+    let usersImage = [R.image.user1(), R.image.user2()]
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setCollectionViewCustomLayout()
@@ -21,7 +23,7 @@ class UsersViewController: UIViewController {
 
     private func setCollectionViewCustomLayout() {
         let layout = AnimatedCollectionViewLayout()
-        layout.animator = PageAttributesAnimator()
+        layout.animator = LinearCardAttributesAnimator()//PageAttributesAnimator()
         layout.scrollDirection = .horizontal
         userscollectionView.collectionViewLayout = layout
         userscollectionView.alwaysBounceHorizontal = true

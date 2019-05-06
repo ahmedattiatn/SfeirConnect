@@ -19,6 +19,8 @@
 		66A638322278858300BA2C38 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A638312278858300BA2C38 /* UsersViewController.swift */; };
 		66A6383522788FB300BA2C38 /* UsersViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A6383422788FB300BA2C38 /* UsersViewController+CollectionView.swift */; };
 		66A63837228028EB00BA2C38 /* UsersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A63836228028EB00BA2C38 /* UsersCollectionViewCell.swift */; };
+		66A6383922803BC500BA2C38 /* CustomCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A6383822803BC500BA2C38 /* CustomCardView.swift */; };
+		66A6383B2280762600BA2C38 /* Array+DC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A6383A2280762600BA2C38 /* Array+DC.swift */; };
 		66F914B622705AE1009839FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F914B522705AE1009839FD /* AppDelegate.swift */; };
 		66F914B822705AE1009839FD /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F914B722705AE1009839FD /* SignInViewController.swift */; };
 		66F914BB22705AE1009839FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66F914B922705AE1009839FD /* Main.storyboard */; };
@@ -42,6 +44,8 @@
 		66A638312278858300BA2C38 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
 		66A6383422788FB300BA2C38 /* UsersViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UsersViewController+CollectionView.swift"; sourceTree = "<group>"; };
 		66A63836228028EB00BA2C38 /* UsersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersCollectionViewCell.swift; sourceTree = "<group>"; };
+		66A6383822803BC500BA2C38 /* CustomCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCardView.swift; sourceTree = "<group>"; };
+		66A6383A2280762600BA2C38 /* Array+DC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+DC.swift"; sourceTree = "<group>"; };
 		66F914B222705AE1009839FD /* SfeirConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SfeirConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66F914B522705AE1009839FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66F914B722705AE1009839FD /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +114,7 @@
 			children = (
 				66F914D72270AAFD009839FD /* UIButton+DC.swift */,
 				66F914D92270AC92009839FD /* UIColor+DC.swift */,
+				66A6383A2280762600BA2C38 /* Array+DC.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -204,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				66A637F122730D1F00BA2C38 /* AnalyticsManager.swift */,
+				66A6383822803BC500BA2C38 /* CustomCardView.swift */,
 				66A637F322730D3100BA2C38 /* Extension */,
 			);
 			path = Common;
@@ -452,6 +458,8 @@
 				66F914B622705AE1009839FD /* AppDelegate.swift in Sources */,
 				66A637E62271D22300BA2C38 /* FoodCategoryViewController.swift in Sources */,
 				66A637F222730D1F00BA2C38 /* AnalyticsManager.swift in Sources */,
+				66A6383922803BC500BA2C38 /* CustomCardView.swift in Sources */,
+				66A6383B2280762600BA2C38 /* Array+DC.swift in Sources */,
 				66A6383522788FB300BA2C38 /* UsersViewController+CollectionView.swift in Sources */,
 				66A6382822783C1200BA2C38 /* R.generated.swift in Sources */,
 				66A6382E2278779200BA2C38 /* SignInViewController+GUISignIn.swift in Sources */,

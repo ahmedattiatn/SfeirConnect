@@ -10,8 +10,16 @@ import UIKit
 
 class UsersCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var userImageView: UIImageView!
+    @IBOutlet weak var nameAndStatus: UILabel!
+    @IBOutlet weak var points: UILabel!
+
     override func awakeFromNib() {
         super.awakeFromNib()
+    }
+
+    func updateUI(userImage: UIImage) {
+        userImageView.image = userImage
     }
 
     override var isSelected: Bool {
