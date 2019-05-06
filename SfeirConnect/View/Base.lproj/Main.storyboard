@@ -268,7 +268,7 @@
                         <viewLayoutGuide key="safeArea" id="Efn-h2-6Pa"/>
                     </view>
                     <connections>
-                        <segue destination="cK5-2Z-ySc" kind="presentation" identifier="UsersViewControllerSegue" modalTransitionStyle="crossDissolve" id="aa6-Bl-3ha"/>
+                        <segue destination="cK5-2Z-ySc" kind="show" identifier="UsersViewControllerSegue" id="aa6-Bl-3ha"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SiZ-jb-NOi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -451,13 +451,13 @@
         <image name="bg-picture" width="381" height="826"/>
         <image name="dark-bg-cat" width="169" height="114"/>
         <image name="google" width="23" height="23"/>
-        <image name="heart" width="22" height="19"/>
+        <image name="heart" width="34" height="30"/>
         <image name="mask" width="169" height="98"/>
         <image name="menu" width="34" height="34"/>
         <image name="menu-Icon" width="18" height="13"/>
         <image name="oval-user" width="47" height="47"/>
         <image name="sheet-bottom-fog-12" width="350" height="82"/>
-        <image name="star" width="20" height="20"/>
+        <image name="star" width="38" height="38"/>
         <image name="time-atlogo" width="65" height="66"/>
         <image name="user-1" width="375" height="811"/>
         <image name="vegetarian-Img" width="169" height="114"/>
