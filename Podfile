@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
- platform :ios, '10.0'
+platform :ios, '10.0'
 
 target 'SfeirConnect' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
@@ -7,6 +7,13 @@ target 'SfeirConnect' do
 
   # Pods for SfeirConnect
   pod 'R.swift'
-  pod 'Firebase'
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'GoogleSignIn'
   pod 'TestFairy'
+  pod 'Fabric', '~> 1.9.0'
+  pod 'Crashlytics', '~> 3.12.0'
+  pod 'SwiftLint'
+  pod 'AnimatedCollectionViewLayout'
+
 end
