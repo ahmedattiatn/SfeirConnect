@@ -20,7 +20,7 @@ extension FoodCategoryViewController: UICollectionViewDataSource {
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if  let cell = collectionView.dequeueReusableCell(withReuseIdentifier: R.reuseIdentifier.foodCategoryCell, for: indexPath) {
+        if  let cell = collectionView.dequeueReusableCell(withReuseIdentifier: R.reuseIdentifier.foodCategoryCollectionViewCell, for: indexPath) {
             cell.updateUI(food: foodViewModel.categoryFoodList[indexPath.row])
             return cell
         }

@@ -13,19 +13,17 @@ class UsersViewController: UIViewController {
 
     @IBOutlet weak var userscollectionView: UICollectionView!
 
-    var animator: (LayoutAttributesAnimator, Bool, Int, Int)?
-    var direction: UICollectionView.ScrollDirection = .horizontal
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        setcollectionviewLayout()
+        setCollectionViewCustomLayout()
         // Do any additional setup after loading the view.
     }
 
-    private func setcollectionviewLayout() {
-        if let layout = userscollectionView?.collectionViewLayout as? AnimatedCollectionViewLayout {
-            layout.scrollDirection = direction
-            layout.animator = animator?.0
-        }
+    private func setCollectionViewCustomLayout() {
+        let layout = AnimatedCollectionViewLayout()
+        layout.animator = PageAttributesAnimator()
+        layout.scrollDirection = .horizontal
+        userscollectionView.collectionViewLayout = layout
+        userscollectionView.alwaysBounceHorizontal = true
     }
 }
