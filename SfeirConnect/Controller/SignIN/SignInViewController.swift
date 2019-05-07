@@ -13,12 +13,14 @@ import GoogleSignIn
 
 class SignInViewController: UIViewController {
 
+    // MARK: - IBOutlet
     @IBOutlet weak var logoImageView: UIImageView!
     @IBOutlet weak var googleBtn: DCButton!
     @IBOutlet weak var justeatLabel: UILabel!
     @IBOutlet weak var timeatLabel: UILabel!
     @IBOutlet weak var googleImageView: UIImageView!
 
+    // MARK: - View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -31,9 +33,10 @@ class SignInViewController: UIViewController {
         animateView()
     }
 
+    // MARK: - User Action
     @IBAction func signInWithGoogle(_ sender: Any) {
-       // let trace = Performance.startTrace(name: "test trace")
-       // trace?.incrementMetric("retry", by: 1)
+        // let trace = Performance.startTrace(name: "test trace")
+        // trace?.incrementMetric("retry", by: 1)
         GIDSignIn.sharedInstance().signIn()
         //trace?.stop()
     }

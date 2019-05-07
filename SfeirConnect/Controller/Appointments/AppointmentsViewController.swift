@@ -10,12 +10,13 @@ import UIKit
 
 class AppointmentsViewController: UIViewController {
 
-    let appointmentsImages = [R.image.pastaSalad(), R.image.salad()]
+    // MARK: - Proprities
+    lazy var appointmentsViewModel = AppointmentsViewModel()
 
+    // MARK: - View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
 }

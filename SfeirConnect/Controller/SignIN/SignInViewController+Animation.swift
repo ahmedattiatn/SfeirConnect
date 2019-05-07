@@ -13,6 +13,7 @@ let animatedXorY: CGFloat  = 20
 
 extension SignInViewController {
 
+    // MARK: - Setup
     func animateView() {
         googleImageView.alpha = animatedAlpha
         googleBtn.alpha = animatedAlpha

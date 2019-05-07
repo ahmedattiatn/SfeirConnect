@@ -1,1 +1,1 @@
-# A Demo app for a Clean Architecture 
+# A Demo App For a Clean Architecture

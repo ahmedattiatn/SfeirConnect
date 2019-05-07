@@ -10,26 +10,18 @@ import UIKit
 
 class FoodCategoryCollectionViewCell: UICollectionViewCell {
 
+    // MARK: - IBOutlet
     @IBOutlet weak var foodImage: UIImageView!
     @IBOutlet weak var foodLabel: UILabel!
 
+    // MARK: - Setup
     func updateUI(food: Food) {
         foodImage.image = food.imageName
         foodLabel.text = food.name
     }
 
+    // MARK: - View life cycle
     override func awakeFromNib() {
         super.awakeFromNib()
-    }
-
-    override var isSelected: Bool {
-        didSet {
-            if self.isSelected {
-                // Start Animation
-                //self.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
-            } else {
-                // self.transform = CGAffineTransform.identity
-            }
-        }
     }
 }

@@ -1564,10 +1564,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 
-## TestFairy
-
-
-
 ## nanopb
 
 Copyright (c) 2011 Petteri Aimonen <jpa at nanopb.mail.kapsi.fi>
