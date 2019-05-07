@@ -19,12 +19,16 @@ extension UsersViewController: UICollectionViewDelegate, UICollectionViewDataSou
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if  let cell = collectionView.dequeueReusableCell(withReuseIdentifier: R.reuseIdentifier.usersCollectionViewCell, for: indexPath) {
-            if let imageUser = usersImage.randomItem() {
+            if let imageUser = usersImages.randomItem() {
                 cell.updateUI(userImage: imageUser!)
             }
             return cell
         }
         return UICollectionViewCell()
+    }
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: R.segue.usersViewController.appointmentsViewControllerSegue, sender: nil)
     }
 }
 

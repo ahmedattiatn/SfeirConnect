@@ -13,7 +13,7 @@ class UsersViewController: UIViewController {
 
     @IBOutlet weak var userscollectionView: UICollectionView!
 
-    let usersImage = [R.image.user1(), R.image.user2()]
+    let usersImages = [R.image.user1(), R.image.user2()]
 
     override func viewDidLoad() {
         super.viewDidLoad()
