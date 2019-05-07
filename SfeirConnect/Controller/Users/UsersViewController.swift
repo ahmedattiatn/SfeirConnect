@@ -11,16 +11,20 @@ import AnimatedCollectionViewLayout
 
 class UsersViewController: UIViewController {
 
+    // MARK: - IBOutlet
     @IBOutlet weak var userscollectionView: UICollectionView!
 
-    let usersImages = [R.image.user1(), R.image.user2()]
+    // MARK: - Proprities
+    lazy var userViewModel = UserViewModel()
 
+    // MARK: - View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setCollectionViewCustomLayout()
         // Do any additional setup after loading the view.
     }
 
+    // MARK: - Private methods
     private func setCollectionViewCustomLayout() {
         let layout = AnimatedCollectionViewLayout()
         layout.animator = LinearCardAttributesAnimator()//PageAttributesAnimator()

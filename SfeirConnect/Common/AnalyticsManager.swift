@@ -10,7 +10,7 @@ import Foundation
 import Firebase
 
 class AnalyticsManager {
-
+/*
     /** ----------------------------TAGS----------------------------**/
 
     /* --------Events-------- */
@@ -122,5 +122,5 @@ class AnalyticsManager {
 
     static func trackScreenWith(screenName: String) {
         Analytics.setScreenName(screenName, screenClass: screenName)
-    }
+    }*/
 }

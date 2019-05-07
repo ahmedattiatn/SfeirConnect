@@ -10,8 +10,10 @@ import UIKit
 
 class FoodCategoryViewController: UIViewController {
 
+    // MARK: - Proprities
     lazy var foodViewModel = FoodViewModel()
 
+    // MARK: - View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
