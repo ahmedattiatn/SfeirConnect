@@ -11,6 +11,7 @@ import UIKit
 // MARK: - @IBDesignable
 @IBDesignable
 class CustomCardView: UIView {
+
     @IBInspectable var cornerRadius: CGFloat = 6
     @IBInspectable var shadowOffsetWidth: Int = 0
     @IBInspectable var shadowOffsetHeight: Int = 3

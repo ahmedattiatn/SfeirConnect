@@ -24,6 +24,8 @@
 		66A6383E228176A300BA2C38 /* AppointmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A6383D228176A300BA2C38 /* AppointmentsViewController.swift */; };
 		66A63840228176B700BA2C38 /* AppointmentsViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A6383F228176B700BA2C38 /* AppointmentsViewController+TableView.swift */; };
 		66A63842228176D900BA2C38 /* AppointmentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A63841228176D900BA2C38 /* AppointmentsTableViewCell.swift */; };
+		66A638442281885F00BA2C38 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A638432281885F00BA2C38 /* UserViewModel.swift */; };
+		66A638462281888600BA2C38 /* AppointmentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A638452281888600BA2C38 /* AppointmentsViewModel.swift */; };
 		66F914B622705AE1009839FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F914B522705AE1009839FD /* AppDelegate.swift */; };
 		66F914B822705AE1009839FD /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F914B722705AE1009839FD /* SignInViewController.swift */; };
 		66F914BB22705AE1009839FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66F914B922705AE1009839FD /* Main.storyboard */; };
@@ -52,6 +54,8 @@
 		66A6383D228176A300BA2C38 /* AppointmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsViewController.swift; sourceTree = "<group>"; };
 		66A6383F228176B700BA2C38 /* AppointmentsViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppointmentsViewController+TableView.swift"; sourceTree = "<group>"; };
 		66A63841228176D900BA2C38 /* AppointmentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsTableViewCell.swift; sourceTree = "<group>"; };
+		66A638432281885F00BA2C38 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		66A638452281888600BA2C38 /* AppointmentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsViewModel.swift; sourceTree = "<group>"; };
 		66F914B222705AE1009839FD /* SfeirConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SfeirConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66F914B522705AE1009839FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66F914B722705AE1009839FD /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -144,8 +148,8 @@
 			isa = PBXGroup;
 			children = (
 				66A638312278858300BA2C38 /* UsersViewController.swift */,
-				66A6383422788FB300BA2C38 /* UsersViewController+CollectionView.swift */,
 				66A63836228028EB00BA2C38 /* UsersCollectionViewCell.swift */,
+				66A6383422788FB300BA2C38 /* UsersViewController+CollectionView.swift */,
 			);
 			path = Users;
 			sourceTree = "<group>";
@@ -154,8 +158,8 @@
 			isa = PBXGroup;
 			children = (
 				66A6383D228176A300BA2C38 /* AppointmentsViewController.swift */,
-				66A6383F228176B700BA2C38 /* AppointmentsViewController+TableView.swift */,
 				66A63841228176D900BA2C38 /* AppointmentsTableViewCell.swift */,
+				66A6383F228176B700BA2C38 /* AppointmentsViewController+TableView.swift */,
 			);
 			path = Appointments;
 			sourceTree = "<group>";
@@ -217,6 +221,8 @@
 			isa = PBXGroup;
 			children = (
 				66A6382B22786B5900BA2C38 /* FoodViewModel.swift */,
+				66A638432281885F00BA2C38 /* UserViewModel.swift */,
+				66A638452281888600BA2C38 /* AppointmentsViewModel.swift */,
 			);
 			path = ModelView;
 			sourceTree = "<group>";
@@ -443,14 +449,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SfeirConnect/Pods-SfeirConnect-resources.sh",
 				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
-				"${PODS_ROOT}/TestFairy/upload-dsym.sh",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/upload-dsym.sh",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -465,6 +469,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				66A6382A2278516C00BA2C38 /* Food.swift in Sources */,
+				66A638442281885F00BA2C38 /* UserViewModel.swift in Sources */,
+				66A638462281888600BA2C38 /* AppointmentsViewModel.swift in Sources */,
 				66A63837228028EB00BA2C38 /* UsersCollectionViewCell.swift in Sources */,
 				66F914D82270AAFD009839FD /* UIButton+DC.swift in Sources */,
 				66A6382C22786B5900BA2C38 /* FoodViewModel.swift in Sources */,

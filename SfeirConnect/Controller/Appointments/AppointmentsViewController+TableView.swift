@@ -8,11 +8,12 @@
 
 import UIKit
 
-extension AppointmentsViewController: UITableViewDataSource, UITableViewDelegate {
+// MARK: - UITableViewDataSource
+extension AppointmentsViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let  cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.appointmentsTableViewCell, for: indexPath) {
-            if let appointmentsImage = appointmentsImages.randomItem() {
+            if let appointmentsImage = appointmentsViewModel.appointmentsImagesList.randomItem() {
                 cell.updateUI(lunchImage: appointmentsImage!)
             }
             return cell
@@ -27,5 +28,4 @@ extension AppointmentsViewController: UITableViewDataSource, UITableViewDelegate
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-
 }

@@ -10,26 +10,18 @@ import UIKit
 
 class UsersCollectionViewCell: UICollectionViewCell {
 
+    // MARK: - IBOutlet
     @IBOutlet weak var userImageView: UIImageView!
     @IBOutlet weak var nameAndStatus: UILabel!
     @IBOutlet weak var points: UILabel!
 
+    // MARK: - View life cycle
     override func awakeFromNib() {
         super.awakeFromNib()
     }
 
+    // MARK: - Setup
     func updateUI(userImage: UIImage) {
         userImageView.image = userImage
-    }
-
-    override var isSelected: Bool {
-        didSet {
-            if self.isSelected {
-                // Start Animation
-                //self.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
-            } else {
-                // self.transform = CGAffineTransform.identity
-            }
-        }
     }
 }

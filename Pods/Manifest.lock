@@ -79,7 +79,6 @@ PODS:
     - R.swift.Library (~> 5.0.0)
   - R.swift.Library (5.0.1)
   - SwiftLint (0.32.0)
-  - TestFairy (1.19.4)
 
 DEPENDENCIES:
   - AnimatedCollectionViewLayout
@@ -90,7 +89,6 @@ DEPENDENCIES:
   - GoogleSignIn
   - R.swift
   - SwiftLint
-  - TestFairy
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -112,7 +110,6 @@ SPEC REPOS:
     - R.swift
     - R.swift.Library
     - SwiftLint
-    - TestFairy
 
 SPEC CHECKSUMS:
   AnimatedCollectionViewLayout: f2c4e8dda4e3f1678ad6c0b39273a31b19bc935d
@@ -133,8 +130,7 @@ SPEC CHECKSUMS:
   R.swift: f5a87643b91ea569d23d6afb3eee9c743edde239
   R.swift.Library: cfe85d569d9bae6cb262922db130e7c3a7a5fad1
   SwiftLint: 009a898ef2a1c851f45e1b59349bf6ff2ddc990d
-  TestFairy: 35fac774cbebab9c441b40d78e08caacba4ee119
 
-PODFILE CHECKSUM: 9cd94998fffa5c57e5b255d1ff201e8fd7bf4f19
+PODFILE CHECKSUM: 371109a4d3e8719d181b8c18400028d024cbe97b
 
 COCOAPODS: 1.6.1

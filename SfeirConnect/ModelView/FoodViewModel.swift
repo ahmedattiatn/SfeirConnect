@@ -10,12 +10,15 @@ import UIKit
 
 class FoodViewModel {
 
+    // MARK: - Proprities
     var categoryFoodList: [Food] = []
 
+    // MARK: - Init
     init() {
         self.categoryFoodList = getCategoryFoodList()
     }
 
+    // MARK: - Private methods
     private func getCategoryFoodList() -> [Food] {
         categoryFoodList.append(Food(imageName: R.image.vegetarianImg(), name: "Vegetarian"))
         categoryFoodList.append(Food(imageName: R.image.vegan(), name: "Vegan"))

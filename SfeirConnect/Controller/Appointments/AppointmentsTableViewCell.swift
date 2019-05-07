@@ -9,13 +9,17 @@
 import UIKit
 
 class AppointmentsTableViewCell: UITableViewCell {
+
+    // MARK: - IBOutlet
     @IBOutlet weak var appointementsImageView: UIImageView!
 
+    // MARK: - View life cycle
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
+    // MARK: - Setup
     func updateUI(lunchImage: UIImage) {
         appointementsImageView.image = lunchImage
     }
@@ -25,5 +29,4 @@ class AppointmentsTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
 }
