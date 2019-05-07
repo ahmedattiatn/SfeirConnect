@@ -1,1 +1,1 @@
-# A Demo App For a Clean Architecture
+# A Demo App For a Clean Architecture Using Swift best practices for 2018
