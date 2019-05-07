@@ -21,6 +21,9 @@
 		66A63837228028EB00BA2C38 /* UsersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A63836228028EB00BA2C38 /* UsersCollectionViewCell.swift */; };
 		66A6383922803BC500BA2C38 /* CustomCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A6383822803BC500BA2C38 /* CustomCardView.swift */; };
 		66A6383B2280762600BA2C38 /* Array+DC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A6383A2280762600BA2C38 /* Array+DC.swift */; };
+		66A6383E228176A300BA2C38 /* AppointmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A6383D228176A300BA2C38 /* AppointmentsViewController.swift */; };
+		66A63840228176B700BA2C38 /* AppointmentsViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A6383F228176B700BA2C38 /* AppointmentsViewController+TableView.swift */; };
+		66A63842228176D900BA2C38 /* AppointmentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A63841228176D900BA2C38 /* AppointmentsTableViewCell.swift */; };
 		66F914B622705AE1009839FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F914B522705AE1009839FD /* AppDelegate.swift */; };
 		66F914B822705AE1009839FD /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F914B722705AE1009839FD /* SignInViewController.swift */; };
 		66F914BB22705AE1009839FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66F914B922705AE1009839FD /* Main.storyboard */; };
@@ -46,6 +49,9 @@
 		66A63836228028EB00BA2C38 /* UsersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersCollectionViewCell.swift; sourceTree = "<group>"; };
 		66A6383822803BC500BA2C38 /* CustomCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCardView.swift; sourceTree = "<group>"; };
 		66A6383A2280762600BA2C38 /* Array+DC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+DC.swift"; sourceTree = "<group>"; };
+		66A6383D228176A300BA2C38 /* AppointmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsViewController.swift; sourceTree = "<group>"; };
+		66A6383F228176B700BA2C38 /* AppointmentsViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppointmentsViewController+TableView.swift"; sourceTree = "<group>"; };
+		66A63841228176D900BA2C38 /* AppointmentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsTableViewCell.swift; sourceTree = "<group>"; };
 		66F914B222705AE1009839FD /* SfeirConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SfeirConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66F914B522705AE1009839FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66F914B722705AE1009839FD /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -91,14 +97,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		66A637E42271D1F800BA2C38 /* Food */ = {
+		66A637E42271D1F800BA2C38 /* FoodCategory */ = {
 			isa = PBXGroup;
 			children = (
 				66A637E52271D22300BA2C38 /* FoodCategoryViewController.swift */,
 				66A637FA22733CCC00BA2C38 /* FoodCategoryCollectionViewCell.swift */,
 				66A637FC22733CFD00BA2C38 /* FoodCategoryViewController+CollectionView.swift */,
 			);
-			path = Food;
+			path = FoodCategory;
 			sourceTree = "<group>";
 		};
 		66A637E92271D9E700BA2C38 /* AppDelegate */ = {
@@ -142,6 +148,16 @@
 				66A63836228028EB00BA2C38 /* UsersCollectionViewCell.swift */,
 			);
 			path = Users;
+			sourceTree = "<group>";
+		};
+		66A6383C2281753000BA2C38 /* Appointments */ = {
+			isa = PBXGroup;
+			children = (
+				66A6383D228176A300BA2C38 /* AppointmentsViewController.swift */,
+				66A6383F228176B700BA2C38 /* AppointmentsViewController+TableView.swift */,
+				66A63841228176D900BA2C38 /* AppointmentsTableViewCell.swift */,
+			);
+			path = Appointments;
 			sourceTree = "<group>";
 		};
 		66F914A922705AE1009839FD = {
@@ -218,8 +234,9 @@
 		66F914D4227090E7009839FD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				66A6383C2281753000BA2C38 /* Appointments */,
 				66A638302278854C00BA2C38 /* Users */,
-				66A637E42271D1F800BA2C38 /* Food */,
+				66A637E42271D1F800BA2C38 /* FoodCategory */,
 				66F914DB2271A4E2009839FD /* SignIN */,
 			);
 			path = Controller;
@@ -455,9 +472,12 @@
 				66A637FB22733CCC00BA2C38 /* FoodCategoryCollectionViewCell.swift in Sources */,
 				66F914DA2270AC92009839FD /* UIColor+DC.swift in Sources */,
 				66F914B822705AE1009839FD /* SignInViewController.swift in Sources */,
+				66A63842228176D900BA2C38 /* AppointmentsTableViewCell.swift in Sources */,
+				66A63840228176B700BA2C38 /* AppointmentsViewController+TableView.swift in Sources */,
 				66F914B622705AE1009839FD /* AppDelegate.swift in Sources */,
 				66A637E62271D22300BA2C38 /* FoodCategoryViewController.swift in Sources */,
 				66A637F222730D1F00BA2C38 /* AnalyticsManager.swift in Sources */,
+				66A6383E228176A300BA2C38 /* AppointmentsViewController.swift in Sources */,
 				66A6383922803BC500BA2C38 /* CustomCardView.swift in Sources */,
 				66A6383B2280762600BA2C38 /* Array+DC.swift in Sources */,
 				66A6383522788FB300BA2C38 /* UsersViewController+CollectionView.swift in Sources */,
