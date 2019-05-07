@@ -30,7 +30,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.image` struct is generated, and contains static references to 25 images.
+  /// This `R.image` struct is generated, and contains static references to 29 images.
   struct image {
     /// Image `american`.
     static let american = Rswift.ImageResource(bundle: R.hostingBundle, name: "american")
@@ -52,6 +52,10 @@ struct R: Rswift.Validatable {
     static let heart = Rswift.ImageResource(bundle: R.hostingBundle, name: "heart")
     /// Image `helathy`.
     static let helathy = Rswift.ImageResource(bundle: R.hostingBundle, name: "helathy")
+    /// Image `ic_duration`.
+    static let ic_duration = Rswift.ImageResource(bundle: R.hostingBundle, name: "ic_duration")
+    /// Image `ic_people`.
+    static let ic_people = Rswift.ImageResource(bundle: R.hostingBundle, name: "ic_people")
     /// Image `italian`.
     static let italian = Rswift.ImageResource(bundle: R.hostingBundle, name: "italian")
     /// Image `jap`.
@@ -66,6 +70,10 @@ struct R: Rswift.Validatable {
     static let mexican = Rswift.ImageResource(bundle: R.hostingBundle, name: "mexican")
     /// Image `oval-user`.
     static let ovalUser = Rswift.ImageResource(bundle: R.hostingBundle, name: "oval-user")
+    /// Image `pasta-salad`.
+    static let pastaSalad = Rswift.ImageResource(bundle: R.hostingBundle, name: "pasta-salad")
+    /// Image `salad`.
+    static let salad = Rswift.ImageResource(bundle: R.hostingBundle, name: "salad")
     /// Image `sheet-bottom-fog-12`.
     static let sheetBottomFog12 = Rswift.ImageResource(bundle: R.hostingBundle, name: "sheet-bottom-fog-12")
     /// Image `spanish`.
@@ -133,6 +141,16 @@ struct R: Rswift.Validatable {
       return UIKit.UIImage(resource: R.image.helathy, compatibleWith: traitCollection)
     }
     
+    /// `UIImage(named: "ic_duration", bundle: ..., traitCollection: ...)`
+    static func ic_duration(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.ic_duration, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "ic_people", bundle: ..., traitCollection: ...)`
+    static func ic_people(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.ic_people, compatibleWith: traitCollection)
+    }
+    
     /// `UIImage(named: "italian", bundle: ..., traitCollection: ...)`
     static func italian(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.italian, compatibleWith: traitCollection)
@@ -166,6 +184,16 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "oval-user", bundle: ..., traitCollection: ...)`
     static func ovalUser(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.ovalUser, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "pasta-salad", bundle: ..., traitCollection: ...)`
+    static func pastaSalad(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.pastaSalad, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "salad", bundle: ..., traitCollection: ...)`
+    static func salad(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.salad, compatibleWith: traitCollection)
     }
     
     /// `UIImage(named: "sheet-bottom-fog-12", bundle: ..., traitCollection: ...)`
@@ -211,8 +239,10 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.reuseIdentifier` struct is generated, and contains static references to 2 reuse identifiers.
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 3 reuse identifiers.
   struct reuseIdentifier {
+    /// Reuse identifier `AppointmentsTableViewCell`.
+    static let appointmentsTableViewCell: Rswift.ReuseIdentifier<AppointmentsTableViewCell> = Rswift.ReuseIdentifier(identifier: "AppointmentsTableViewCell")
     /// Reuse identifier `foodCategoryCollectionViewCell`.
     static let foodCategoryCollectionViewCell: Rswift.ReuseIdentifier<FoodCategoryCollectionViewCell> = Rswift.ReuseIdentifier(identifier: "foodCategoryCollectionViewCell")
     /// Reuse identifier `usersCollectionViewCell`.
@@ -221,7 +251,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.segue` struct is generated, and contains static references to 2 view controllers.
+  /// This `R.segue` struct is generated, and contains static references to 3 view controllers.
   struct segue {
     /// This struct is generated for `FoodCategoryViewController`, and contains static references to 1 segues.
     struct foodCategoryViewController {
@@ -240,14 +270,29 @@ struct R: Rswift.Validatable {
     
     /// This struct is generated for `SignInViewController`, and contains static references to 1 segues.
     struct signInViewController {
-      /// Segue identifier `HomeViewControllerSegue`.
-      static let homeViewControllerSegue: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, SignInViewController, FoodCategoryViewController> = Rswift.StoryboardSegueIdentifier(identifier: "HomeViewControllerSegue")
+      /// Segue identifier `FoodCategoryViewController`.
+      static let foodCategoryViewController: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, SignInViewController, FoodCategoryViewController> = Rswift.StoryboardSegueIdentifier(identifier: "FoodCategoryViewController")
       
-      /// Optionally returns a typed version of segue `HomeViewControllerSegue`.
+      /// Optionally returns a typed version of segue `FoodCategoryViewController`.
       /// Returns nil if either the segue identifier, the source, destination, or segue types don't match.
       /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
-      static func homeViewControllerSegue(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, SignInViewController, FoodCategoryViewController>? {
-        return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.signInViewController.homeViewControllerSegue, segue: segue)
+      static func foodCategoryViewController(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, SignInViewController, FoodCategoryViewController>? {
+        return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.signInViewController.foodCategoryViewController, segue: segue)
+      }
+      
+      fileprivate init() {}
+    }
+    
+    /// This struct is generated for `UsersViewController`, and contains static references to 1 segues.
+    struct usersViewController {
+      /// Segue identifier `AppointmentsViewControllerSegue`.
+      static let appointmentsViewControllerSegue: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, UsersViewController, AppointmentsViewController> = Rswift.StoryboardSegueIdentifier(identifier: "AppointmentsViewControllerSegue")
+      
+      /// Optionally returns a typed version of segue `AppointmentsViewControllerSegue`.
+      /// Returns nil if either the segue identifier, the source, destination, or segue types don't match.
+      /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
+      static func appointmentsViewControllerSegue(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, UsersViewController, AppointmentsViewController>? {
+        return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.usersViewController.appointmentsViewControllerSegue, segue: segue)
       }
       
       fileprivate init() {}
@@ -328,10 +373,13 @@ struct _R: Rswift.Validatable {
         if UIKit.UIImage(named: "dark-bg-cat", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'dark-bg-cat' is used in storyboard 'Main', but couldn't be loaded.") }
         if UIKit.UIImage(named: "google", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'google' is used in storyboard 'Main', but couldn't be loaded.") }
         if UIKit.UIImage(named: "heart", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'heart' is used in storyboard 'Main', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "ic_duration", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ic_duration' is used in storyboard 'Main', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "ic_people", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ic_people' is used in storyboard 'Main', but couldn't be loaded.") }
         if UIKit.UIImage(named: "mask", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'mask' is used in storyboard 'Main', but couldn't be loaded.") }
         if UIKit.UIImage(named: "menu", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'menu' is used in storyboard 'Main', but couldn't be loaded.") }
         if UIKit.UIImage(named: "menu-Icon", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'menu-Icon' is used in storyboard 'Main', but couldn't be loaded.") }
         if UIKit.UIImage(named: "oval-user", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'oval-user' is used in storyboard 'Main', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "pasta-salad", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'pasta-salad' is used in storyboard 'Main', but couldn't be loaded.") }
         if UIKit.UIImage(named: "sheet-bottom-fog-12", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'sheet-bottom-fog-12' is used in storyboard 'Main', but couldn't be loaded.") }
         if UIKit.UIImage(named: "star", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'star' is used in storyboard 'Main', but couldn't be loaded.") }
         if UIKit.UIImage(named: "time-atlogo", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'time-atlogo' is used in storyboard 'Main', but couldn't be loaded.") }
