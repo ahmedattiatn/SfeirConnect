@@ -5,5 +5,5 @@
 *  SwiftLint
 *  MVVM architecture
 
---> https://theswiftdev.com/2018/02/09/ios-swift-best-practices-for-2020/
+--> https://theswiftdev.com/2020/01/06/what-are-the-best-practices-to-learn-ios-swift-in-2020/
 
